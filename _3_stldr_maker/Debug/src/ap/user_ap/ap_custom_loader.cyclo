@@ -1,0 +1,10 @@
+../src/ap/user_ap/ap_custom_loader.c:40:6:apCustomLoaderInit	3
+../src/ap/user_ap/ap_custom_loader.c:61:9:CSP_QUADSPI_Init	6
+../src/ap/user_ap/ap_custom_loader.c:96:9:CSP_QSPI_Erase_Chip	2
+../src/ap/user_ap/ap_custom_loader.c:105:9:QSPI_AutoPollingMemReady	2
+../src/ap/user_ap/ap_custom_loader.c:114:16:QSPI_WriteEnable	2
+../src/ap/user_ap/ap_custom_loader.c:123:9:QSPI_Configuration	4
+../src/ap/user_ap/ap_custom_loader.c:148:9:CSP_QSPI_EraseSector	2
+../src/ap/user_ap/ap_custom_loader.c:161:9:CSP_QSPI_WriteMemory	6
+../src/ap/user_ap/ap_custom_loader.c:202:9:CSP_QSPI_EnableMemoryMappedMode	2
+../src/ap/user_ap/ap_custom_loader.c:211:9:QSPI_ResetChip	2

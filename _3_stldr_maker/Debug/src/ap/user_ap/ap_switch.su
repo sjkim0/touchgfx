@@ -1,0 +1,3 @@
+../src/ap/user_ap/ap_switch.c:18:6:apSwitchInit	16	static
+../src/ap/user_ap/ap_switch.c:47:6:apSwitchLoop	4	static
+../src/ap/user_ap/ap_switch.c:54:13:isPushed	8	static

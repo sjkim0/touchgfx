@@ -1,0 +1,10 @@
+../src/ap/user_ap/ap_custom_loader.c:40:6:apCustomLoaderInit	24	static,ignoring_inline_asm
+../src/ap/user_ap/ap_custom_loader.c:61:9:CSP_QUADSPI_Init	8	static
+../src/ap/user_ap/ap_custom_loader.c:96:9:CSP_QSPI_Erase_Chip	8	static
+../src/ap/user_ap/ap_custom_loader.c:105:9:QSPI_AutoPollingMemReady	8	static
+../src/ap/user_ap/ap_custom_loader.c:114:16:QSPI_WriteEnable	8	static
+../src/ap/user_ap/ap_custom_loader.c:123:9:QSPI_Configuration	16	static
+../src/ap/user_ap/ap_custom_loader.c:148:9:CSP_QSPI_EraseSector	16	static
+../src/ap/user_ap/ap_custom_loader.c:161:9:CSP_QSPI_WriteMemory	40	static
+../src/ap/user_ap/ap_custom_loader.c:202:9:CSP_QSPI_EnableMemoryMappedMode	8	static
+../src/ap/user_ap/ap_custom_loader.c:211:9:QSPI_ResetChip	8	static

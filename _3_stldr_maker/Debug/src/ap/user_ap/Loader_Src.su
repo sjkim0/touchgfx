@@ -1,0 +1,6 @@
+../src/ap/user_ap/Loader_Src.c:18:5:Init	16	static,ignoring_inline_asm
+../src/ap/user_ap/Loader_Src.c:76:5:Write	24	static,ignoring_inline_asm
+../src/ap/user_ap/Loader_Src.c:103:5:SectorErase	16	static,ignoring_inline_asm
+../src/ap/user_ap/Loader_Src.c:133:5:MassErase	8	static,ignoring_inline_asm
+../src/ap/user_ap/Loader_Src.c:164:10:CheckSum	40	static
+../src/ap/user_ap/Loader_Src.c:246:10:Verify	64	static,ignoring_inline_asm

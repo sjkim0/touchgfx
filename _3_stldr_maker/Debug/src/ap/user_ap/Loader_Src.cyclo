@@ -1,0 +1,6 @@
+../src/ap/user_ap/Loader_Src.c:18:5:Init	3
+../src/ap/user_ap/Loader_Src.c:76:5:Write	3
+../src/ap/user_ap/Loader_Src.c:103:5:SectorErase	3
+../src/ap/user_ap/Loader_Src.c:133:5:MassErase	3
+../src/ap/user_ap/Loader_Src.c:164:10:CheckSum	14
+../src/ap/user_ap/Loader_Src.c:246:10:Verify	5

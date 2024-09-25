@@ -1,0 +1,15 @@
+../src/ap/user_ap/ap_qspi.c:57:6:apQspiInit	112	static
+../src/ap/user_ap/ap_qspi.c:80:6:apQspiLoop	4	static
+../src/ap/user_ap/ap_qspi.c:85:6:apQspiReadState1	88	static
+../src/ap/user_ap/ap_qspi.c:104:6:apQspiReadState2	88	static
+../src/ap/user_ap/ap_qspi.c:123:6:apQspiReadState3	88	static
+../src/ap/user_ap/ap_qspi.c:142:6:apQspiGetStauts	24	static
+../src/ap/user_ap/ap_qspi.c:150:6:apQspiResetChip	88	static
+../src/ap/user_ap/ap_qspi.c:186:6:apQspiWriteEnable	88	static
+../src/ap/user_ap/ap_qspi.c:226:6:apQspiEraseBulkchip	88	static
+../src/ap/user_ap/ap_qspi.c:254:6:apQspiEraseSector	96	static
+../src/ap/user_ap/ap_qspi.c:282:6:apQspiAutoPollingMemReady	120	static
+../src/ap/user_ap/ap_qspi.c:314:6:apQspiAutoPollingWriteEnable	120	static
+../src/ap/user_ap/ap_qspi.c:347:6:apQspiMemMapStart	96	static
+../src/ap/user_ap/ap_qspi.c:377:6:apQspiRead	104	static
+../src/ap/user_ap/ap_qspi.c:405:6:apQspiWrite	104	static

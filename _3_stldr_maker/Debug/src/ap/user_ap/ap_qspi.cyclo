@@ -1,0 +1,15 @@
+../src/ap/user_ap/ap_qspi.c:57:6:apQspiInit	3
+../src/ap/user_ap/ap_qspi.c:80:6:apQspiLoop	1
+../src/ap/user_ap/ap_qspi.c:85:6:apQspiReadState1	1
+../src/ap/user_ap/ap_qspi.c:104:6:apQspiReadState2	1
+../src/ap/user_ap/ap_qspi.c:123:6:apQspiReadState3	1
+../src/ap/user_ap/ap_qspi.c:142:6:apQspiGetStauts	2
+../src/ap/user_ap/ap_qspi.c:150:6:apQspiResetChip	5
+../src/ap/user_ap/ap_qspi.c:186:6:apQspiWriteEnable	5
+../src/ap/user_ap/ap_qspi.c:226:6:apQspiEraseBulkchip	3
+../src/ap/user_ap/ap_qspi.c:254:6:apQspiEraseSector	2
+../src/ap/user_ap/ap_qspi.c:282:6:apQspiAutoPollingMemReady	3
+../src/ap/user_ap/ap_qspi.c:314:6:apQspiAutoPollingWriteEnable	3
+../src/ap/user_ap/ap_qspi.c:347:6:apQspiMemMapStart	3
+../src/ap/user_ap/ap_qspi.c:377:6:apQspiRead	4
+../src/ap/user_ap/ap_qspi.c:405:6:apQspiWrite	5

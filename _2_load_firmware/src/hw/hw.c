@@ -13,4 +13,6 @@ void hwInit(void)
 {
 	bspInit();
 	MX_GPIO_Init();
+	MX_DMA_Init();
+	MX_USART1_UART_Init();
 }

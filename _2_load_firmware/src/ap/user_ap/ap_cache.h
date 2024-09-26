@@ -12,7 +12,13 @@
 #include "ap_def.h"
 
 
+#if DEF_AP_CACHE_USE
+
+
 void apCacheInit(void);
+
+
+#endif
 
 
 #endif /* AP_USER_AP_AP_CACHE_H_ */

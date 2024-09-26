@@ -12,6 +12,8 @@
 #include "hw_def.h"
 #include "gpio.h"
 #include "memorymap.h"
+#include "dma.h"
+#include "usart.h"
 
 
 void hwInit(void);

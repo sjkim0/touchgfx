@@ -9,6 +9,9 @@
 #include "ap_switch.h"
 
 
+#if DEF_AP_SWITCH_USE
+
+
 ap_switch_t switch_inst;
 
 
@@ -60,3 +63,5 @@ static bool isPushed(void)
 
 	return false;
 }
+
+#endif

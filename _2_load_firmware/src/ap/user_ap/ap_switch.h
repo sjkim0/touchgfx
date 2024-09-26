@@ -12,6 +12,9 @@
 #include "ap_def.h"
 
 
+#if DEF_AP_SWITCH_USE
+
+
 typedef struct
 {
 	int pushed_history;
@@ -25,5 +28,7 @@ extern ap_switch_t switch_inst;
 void apSwitchInit(void);
 void apSwitchLoop(void);
 
+
+#endif
 
 #endif /* AP_USER_AP_AP_SWITCH_H_ */

@@ -11,7 +11,10 @@
 
 #include "hw.h"
 
-#define DEF_AP_USE_UART (0U)
+
+#define DEF_AP_UART_USE   (1U)
+#define DEF_AP_CACHE_USE  (1U)
+#define DEF_AP_SWITCH_USE (0U)
 
 
 #endif /* AP_AP_DEF_H_ */

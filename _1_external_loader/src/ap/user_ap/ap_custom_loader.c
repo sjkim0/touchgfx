@@ -47,7 +47,7 @@ void apCustomLoaderInit(void)
   		while(1); //breakpoint - error detected
   	}
 
-	bool jump = false;
+	bool jump = true;
 	if(jump == true)
 	{
 	    __set_MSP(*(volatile uint32_t*)0x90000000);

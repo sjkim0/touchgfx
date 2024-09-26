@@ -183,10 +183,10 @@ SECTIONS
     . = ALIGN(4);
   } >RAM_D3
   
-   .ram3blockclear :
+   .ram3blockflash :
   {
     . = ALIGN(4);
-    KEEP(*(.ram3blockclearsection))
+    KEEP(*(.ram3flashsection))
     . = ALIGN(4);
   } >RAM_D3 AT> FLASH
   

@@ -9,6 +9,9 @@
 #include "bsp.h"
 
 
+#define DEF_EXTERNAL_LOADER_FLASH_USE
+
+
 static void MPU_Config(void);
 void SystemClock_Config(void);
 
@@ -16,8 +19,8 @@ void SystemClock_Config(void);
 void bspInit(void)
 {
 	MPU_Config();
-//	SCB_EnableICache();
-//	SCB_EnableDCache();
+	SCB_EnableICache();
+	SCB_EnableDCache();
 	HAL_Init();
 	SystemClock_Config();
 }
@@ -120,16 +123,32 @@ void MPU_Config(void)
   MPU_InitStruct.TypeExtField = MPU_TEX_LEVEL0;
   MPU_InitStruct.AccessPermission = MPU_REGION_FULL_ACCESS;
   MPU_InitStruct.DisableExec = MPU_INSTRUCTION_ACCESS_DISABLE;
-  MPU_InitStruct.IsShareable = MPU_ACCESS_SHAREABLE;
+  MPU_InitStruct.IsShareable = MPU_ACCESS_NOT_SHAREABLE;
   MPU_InitStruct.IsCacheable = MPU_ACCESS_CACHEABLE;
   MPU_InitStruct.IsBufferable = MPU_ACCESS_NOT_BUFFERABLE;
+
+  HAL_MPU_ConfigRegion(&MPU_InitStruct);
+
+  /** Initializes and configures the Region and the memory to be protected
+  */
+  MPU_InitStruct.Number = MPU_REGION_NUMBER1;
+
+#ifdef DEF_EXTERNAL_LOADER_FLASH_USE
+  MPU_InitStruct.BaseAddress = 0x90000000;  // external loader
+  MPU_InitStruct.Size = MPU_REGION_SIZE_16MB;
+#elif
+  MPU_InitStruct.BaseAddress = 0x08000000;
+  MPU_InitStruct.Size = MPU_REGION_SIZE_128KB;
+#endif
+
+  MPU_InitStruct.SubRegionDisable = 0x0;
+  MPU_InitStruct.DisableExec = MPU_INSTRUCTION_ACCESS_ENABLE;
 
   HAL_MPU_ConfigRegion(&MPU_InitStruct);
   /* Enables the MPU */
   HAL_MPU_Enable(MPU_PRIVILEGED_DEFAULT);
 
 }
-
 /* USER CODE END 4 */
 
  /* MPU Configuration */

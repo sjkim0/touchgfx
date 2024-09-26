@@ -173,6 +173,19 @@ SECTIONS
     libm.a ( * )
     libgcc.a ( * )
   }
+   .ram3block (NOLOAD) :
+  {
+    . = ALIGN(4);
+    KEEP(*(.ram3section))
+    . = ALIGN(4);
+  } >RAM_D3
+  
+   .ram3blockflash :
+  {
+    . = ALIGN(4);
+    KEEP(*(.ram3flashsection))
+    . = ALIGN(4);
+  } >RAM_D3 AT> FLASH
 
   .ARM.attributes 0 : { *(.ARM.attributes) }
 }

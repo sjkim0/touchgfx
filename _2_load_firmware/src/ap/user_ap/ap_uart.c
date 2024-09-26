@@ -32,11 +32,23 @@ typedef struct
 }ApUart_t;
 
 
-ApUart_t ap_uart_inst;
+ApUart_t __attribute__((section(".ram3flashsection")))ap_uart_inst;
 
 
 void apUartInit(void)
 {
+	// init instance
+	ap_uart_inst.rx_tail = 0;
+	ap_uart_inst.rx_header = 0;
+	memset(ap_uart_inst.rx_buffer, '\0', sizeof(ap_uart_inst.rx_buffer));
+	ap_uart_inst.tx_header = 0;
+	ap_uart_inst.tx_tail = 0;
+	memset(ap_uart_inst.tx_buffer, '\0', sizeof(ap_uart_inst.tx_buffer));
+	memset(ap_uart_inst.transiver, '\0', sizeof(ap_uart_inst.transiver));
+	ap_uart_inst.parse_header = 0;
+	ap_uart_inst.parse_tail = 0;
+	memset(ap_uart_inst.parse_buffer, '\0', sizeof(ap_uart_inst.parse_buffer));
+
 	HAL_UART_Receive_DMA(&huart1, ap_uart_inst.rx_buffer, DEF_AP_UART_RX_BUFF_LENGTH);
 }
 
@@ -48,6 +60,10 @@ void apUartLoop(void)
 	now_ndtr = ((DMA_Stream_TypeDef *)hdma_usart1_rx.Instance)->NDTR;
 	now_rx_header = DEF_AP_UART_RX_BUFF_LENGTH - now_ndtr;
 
+	if(now_rx_header != ap_uart_inst.rx_header)
+	{
+//        SCB_InvalidateDCache_by_Addr((uint32_t*)ap_uart_inst.rx_buffer, DEF_AP_UART_RX_BUFF_LENGTH);
+	}
 	while(now_rx_header != ap_uart_inst.rx_header)
 	{
 		ap_uart_inst.rx_header += 1;

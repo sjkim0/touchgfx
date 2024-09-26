@@ -12,6 +12,7 @@
 #include "ap_def.h"
 #include "ap_uart.h"
 #include "ap_switch.h"
+#include "ap_cache.h"
 
 
 void apInit(void);

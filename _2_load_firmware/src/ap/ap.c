@@ -22,6 +22,7 @@ STR _str, _str2;
 
 void apInit(void)
 {
+	apCacheInit();
 }
 
 void apMain(void)

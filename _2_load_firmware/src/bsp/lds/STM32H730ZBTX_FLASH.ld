@@ -54,6 +54,7 @@ MEMORY
 /* Define output sections */
 SECTIONS
 {
+ 
   /* The startup code goes first into FLASH */
   .isr_vector :
   {
@@ -166,6 +167,7 @@ SECTIONS
     . = ALIGN(8);
   } >RAM_D1
 
+  
   /* Remove information from the standard libraries */
   /DISCARD/ :
   {
@@ -173,6 +175,20 @@ SECTIONS
     libm.a ( * )
     libgcc.a ( * )
   }
-
+  
+   .ram3block (NOLOAD) :
+  {
+    . = ALIGN(4);
+    KEEP(*(.ram3section))
+    . = ALIGN(4);
+  } >RAM_D3
+  
+   .ram3blockclear :
+  {
+    . = ALIGN(4);
+    KEEP(*(.ram3blockclearsection))
+    . = ALIGN(4);
+  } >RAM_D3 AT> FLASH
+  
   .ARM.attributes 0 : { *(.ARM.attributes) }
 }

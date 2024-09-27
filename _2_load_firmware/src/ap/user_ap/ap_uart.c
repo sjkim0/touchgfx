@@ -62,7 +62,7 @@ void apUartLoop(void)
 
 	if(now_rx_header != ap_uart_inst.rx_header)
 	{
-//        SCB_InvalidateDCache_by_Addr((uint32_t*)ap_uart_inst.rx_buffer, DEF_AP_UART_RX_BUFF_LENGTH);
+		SCB_InvalidateDCache_by_Addr((uint32_t*)ap_uart_inst.rx_buffer, DEF_AP_UART_RX_BUFF_LENGTH);
 	}
 	while(now_rx_header != ap_uart_inst.rx_header)
 	{

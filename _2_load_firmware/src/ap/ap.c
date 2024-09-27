@@ -12,6 +12,7 @@
 void apInit(void)
 {
 	// apCacheInit();
+	apTimInit();
 	apUartInit();
 }
 

@@ -14,6 +14,7 @@
 #include "memorymap.h"
 #include "dma.h"
 #include "usart.h"
+#include "tim.h"
 
 
 void hwInit(void);

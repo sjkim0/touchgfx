@@ -9,7 +9,7 @@
 #include "bsp.h"
 
 
-#define DEF_EXTERNAL_LOADER_FLASH_USE (0U)
+#define DEF_EXTERNAL_LOADER_FLASH_USE (1U)
 
 
 static void MPU_Config(void);
@@ -28,9 +28,9 @@ void bspInit(void)
 void delay(uint32_t tick)
 {
 	//@ brief: disable interrupt in external flash
-	// HAL_Delay(tick);
+	HAL_Delay(tick);
 
-	delayWhile(tick * 5);
+//	delayWhile(tick * 5);
 }
 
 void delayWhile(uint32_t tick)

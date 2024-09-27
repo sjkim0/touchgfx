@@ -17,7 +17,7 @@ extern void SystemClock_Config(void);
  */
 int Init(void)
 {
-    //*(uint32_t*)0xE000EDF0 = 0xA05F0000; //enable interrupts in debug
+    *(uint32_t*)0xE000EDF0 = 0xA05F0000; //enable interrupts in debug
 
     SystemInit();
 

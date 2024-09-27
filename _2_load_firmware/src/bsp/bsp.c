@@ -9,7 +9,7 @@
 #include "bsp.h"
 
 
-#define DEF_EXTERNAL_LOADER_FLASH_USE (1U)
+#define DEF_EXTERNAL_LOADER_FLASH_USE (0U)
 
 
 static void MPU_Config(void);

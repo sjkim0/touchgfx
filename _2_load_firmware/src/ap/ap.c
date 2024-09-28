@@ -11,9 +11,10 @@
 
 void apInit(void)
 {
-	// apCacheInit();
-	apTimInit();
+//	apCacheInit();
+//	apTimInit();
 	apUartInit();
+	apSdramInit();
 }
 
 void apMain(void)

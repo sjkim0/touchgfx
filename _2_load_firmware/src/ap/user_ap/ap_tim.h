@@ -12,8 +12,14 @@
 #include "ap_def.h"
 
 
+#if DEF_AP_TIM_USE
+
+
 void apTimInit(void);
 void apTimLoop(void);
+
+
+#endif
 
 
 #endif /* AP_USER_AP_AP_TIM_H_ */

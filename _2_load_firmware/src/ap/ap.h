@@ -14,6 +14,7 @@
 #include "ap_switch.h"
 #include "ap_cache.h"
 #include "ap_tim.h"
+#include "ap_sdram.h"
 
 
 void apInit(void);

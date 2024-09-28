@@ -9,6 +9,9 @@
 #include "ap_tim.h"
 
 
+#if DEF_AP_TIM_USE
+
+
 void apTimInit(void)
 {
 	HAL_TIM_Base_Init(&htim6);
@@ -19,3 +22,6 @@ void apTimLoop(void)
 {
 
 }
+
+
+#endif

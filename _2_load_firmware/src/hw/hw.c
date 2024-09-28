@@ -16,4 +16,5 @@ void hwInit(void)
 	MX_DMA_Init();
 	MX_USART1_UART_Init();
 	MX_TIM6_Init();
+	MX_FMC_Init();
 }

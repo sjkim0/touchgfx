@@ -1,5 +1,6 @@
 /* Includes ------------------------------------------------------------------*/
 #include "ap_lcd.h"
+#include "ap_lcd_def.h"
 //#include "stm32H750_qspi.h"
 
 /* Global Variables ------------------------------------------------------------------*/
@@ -29,9 +30,9 @@ void LCD_Init(void)
   LCD_SetLayerVisible(1, DISABLE);
   LCD_SetLayerVisible(0, ENABLE);
 
-  LCD_Clear(NAVY);
+  LCD_Clear(DEF_NAVY);
   HAL_Delay(10);
-	LCD_SetBackLight(50);
+  LCD_SetBackLight(100);
   HAL_TIM_PWM_Start(&BACKLIGHT_TIMER, TIM_CHANNEL_1);
 }
 
@@ -52,7 +53,7 @@ static void FillBuffer(uint32_t LayerIndex, void * pDst, uint32_t xSize, uint32_
 	hdma2d.Init.Mode = DMA2D_R2M;		/* Register to memory mode */
 	hdma2d.Init.ColorMode = DMA2D_OUTPUT_RGB565;
 
-  Color = ((ColorIndex & RED) << 8) | ((ColorIndex & GREEN ) << 5) | ((ColorIndex & BLUE) << 3); // 32bit Color로 만들기
+  Color = ((ColorIndex & DEF_RED) << 8) | ((ColorIndex & DEF_GREEN ) << 5) | ((ColorIndex & DEF_BLUE) << 3); // 32bit Color로 만들기
   hdma2d.Init.OutputOffset = OffLine;
 
   /* DMA2D Initialization */

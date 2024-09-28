@@ -29,7 +29,7 @@ void LCD_Init(void)
   LCD_SetLayerVisible(1, DISABLE);
   LCD_SetLayerVisible(0, ENABLE);
 
-  LCD_Clear(BLACK);
+  LCD_Clear(NAVY);
   HAL_Delay(10);
 	LCD_SetBackLight(50);
   HAL_TIM_PWM_Start(&BACKLIGHT_TIMER, TIM_CHANNEL_1);

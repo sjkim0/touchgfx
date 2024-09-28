@@ -1,9 +1,9 @@
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
-  * @file    tim.h
+  * @file    dma2d.h
   * @brief   This file contains all the function prototypes for
-  *          the tim.c file
+  *          the dma2d.c file
   ******************************************************************************
   * @attention
   *
@@ -18,8 +18,8 @@
   */
 /* USER CODE END Header */
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __TIM_H__
-#define __TIM_H__
+#ifndef __DMA2D_H__
+#define __DMA2D_H__
 
 #ifdef __cplusplus
 extern "C" {
@@ -32,18 +32,13 @@ extern "C" {
 
 /* USER CODE END Includes */
 
-extern TIM_HandleTypeDef htim6;
-
-extern TIM_HandleTypeDef htim16;
+extern DMA2D_HandleTypeDef hdma2d;
 
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
 
-void MX_TIM6_Init(void);
-void MX_TIM16_Init(void);
-
-void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
+void MX_DMA2D_Init(void);
 
 /* USER CODE BEGIN Prototypes */
 
@@ -53,5 +48,5 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 }
 #endif
 
-#endif /* __TIM_H__ */
+#endif /* __DMA2D_H__ */
 

@@ -15,6 +15,7 @@ void apInit(void)
 //	apTimInit();
 	apUartInit();
 	apSdramInit();
+	LCD_Init();
 }
 
 void apMain(void)

@@ -16,6 +16,8 @@
 #include "usart.h"
 #include "tim.h"
 #include "fmc.h"
+#include "dma2d.h"
+#include "ltdc.h"
 
 
 void hwInit(void);

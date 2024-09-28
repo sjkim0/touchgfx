@@ -15,6 +15,7 @@
 #include "ap_cache.h"
 #include "ap_tim.h"
 #include "ap_sdram.h"
+#include "ap_lcd.h"
 
 
 void apInit(void);

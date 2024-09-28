@@ -19,6 +19,8 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "dma.h"
+#include "dma2d.h"
+#include "ltdc.h"
 #include "memorymap.h"
 #include "tim.h"
 #include "usart.h"
@@ -107,6 +109,9 @@ int main(void)
   MX_USART1_UART_Init();
   MX_TIM6_Init();
   MX_FMC_Init();
+  MX_DMA2D_Init();
+  MX_LTDC_Init();
+  MX_TIM16_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */

@@ -9,6 +9,11 @@
 #define AP_USER_AP_AP_TIM_H_
 
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
 #include "ap_def.h"
 
 
@@ -19,6 +24,11 @@ void apTimInit(void);
 void apTimLoop(void);
 
 
+#endif
+
+
+#ifdef __cplusplus
+}
 #endif
 
 

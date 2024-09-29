@@ -9,6 +9,11 @@
 #define BSP_BSP_H_
 
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
 #include "stm32h7xx_hal.h"
 
 
@@ -18,6 +23,11 @@ void delayWhile(uint32_t tick);
 uint32_t millis(void);
 
 void Error_Handler(void);
+
+
+#ifdef __cplusplus
+}
+#endif
 
 
 #endif /* BSP_BSP_H_ */

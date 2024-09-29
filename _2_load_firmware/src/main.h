@@ -9,10 +9,20 @@
 #define MAIN_H_
 
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
 #include "ap.h"
 
 
 int main(void);
+
+
+#ifdef __cplusplus
+}
+#endif
 
 
 #endif /* MAIN_H_ */

@@ -1,6 +1,12 @@
 #ifndef LCD_STM32_DRIVER_H
 #define LCD_STM32_DRIVER_H
 
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
 #include "ap_def.h"
 
 typedef struct
@@ -53,6 +59,12 @@ void _DMA2D_Copy(void * pSrc, void * pDst, uint32_t xSize, uint32_t ySize, uint3
 void _DMA2D_DrawAlphaBitmap(void * pDst, void * pSrc, uint32_t xSize, uint32_t ySize, uint32_t OffLineSrc, uint32_t OffLineDst, uint32_t PixelFormat);
 void _DMA2D_MixColorsBulk(uint32_t * pColorFG, uint32_t OffLineSrcFG, uint32_t * pColorDst, uint32_t OffLineDst, uint32_t xSize, uint32_t ySize, uint8_t Intens);
 void _DMA2D_AlphaBlendingBulk(uint32_t * pColorFG, uint32_t OffLineSrcFG, uint32_t * pColorBG, uint32_t OffLineSrcBG, uint32_t * pColorDst, uint32_t OffLineDst, uint32_t xSize, uint32_t ySize);
+
+
+#ifdef __cplusplus
+}
+#endif
+
 
 #endif
 

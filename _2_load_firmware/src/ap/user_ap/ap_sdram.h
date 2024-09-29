@@ -9,6 +9,11 @@
 #define AP_USER_AP_AP_SDRAM_H_
 
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
 #include "ap_def.h"
 
 
@@ -19,6 +24,11 @@ void apSdramInit(void);
 void apSdramLoop(void);
 
 
+#endif
+
+
+#ifdef __cplusplus
+}
 #endif
 
 

@@ -9,6 +9,11 @@
 #define AP_USER_AP_AP_SDRAM_DEF_H_
 
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
 #define DEF_FMC_SDRAM_BK_1_SR_1_MEM_ADDR             (0xC0000000U)
 
 #define DEF_SDRAM_TIMEOUT                            ((uint32_t)0xFFFF)
@@ -24,6 +29,11 @@
 #define DEF_SDRAM_MODEREG_OPERATING_MODE_STANDARD    ((uint16_t)0x0000)
 #define DEF_SDRAM_MODEREG_WRITEBURST_MODE_PROGRAMMED ((uint16_t)0x0000)
 #define DEF_SDRAM_MODEREG_WRITEBURST_MODE_SINGLE     ((uint16_t)0x0200)
+
+
+#ifdef __cplusplus
+}
+#endif
 
 
 #endif /* AP_USER_AP_AP_SDRAM_DEF_H_ */

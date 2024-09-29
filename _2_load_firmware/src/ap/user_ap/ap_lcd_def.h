@@ -9,6 +9,11 @@
 #define AP_USER_AP_AP_LCD_DEF_H_
 
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
 #define DEF_LCD_SCREEN_HEIGHT 480
 #define DEF_LCD_SCREEN_WIDTH  800
 
@@ -45,5 +50,8 @@
 #define DEF_LGRAYBLUE   0XA651
 #define DEF_LBBLUE      0X2B12
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* AP_USER_AP_AP_LCD_DEF_H_ */

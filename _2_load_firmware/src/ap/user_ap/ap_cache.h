@@ -9,6 +9,11 @@
 #define AP_USER_AP_AP_CACHE_H_
 
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
 #include "ap_def.h"
 
 
@@ -20,5 +25,9 @@ void apCacheInit(void);
 
 #endif
 
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* AP_USER_AP_AP_CACHE_H_ */

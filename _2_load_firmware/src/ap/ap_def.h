@@ -9,6 +9,11 @@
 #define AP_AP_DEF_H_
 
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
 #include "hw.h"
 
 
@@ -17,6 +22,11 @@
 #define DEF_AP_SWITCH_USE (0U)
 #define DEF_AP_TIM_USE    (0U)
 #define DEF_AP_SDRAM_USE  (1U)
+
+
+#ifdef __cplusplus
+}
+#endif
 
 
 #endif /* AP_AP_DEF_H_ */

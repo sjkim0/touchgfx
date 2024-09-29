@@ -20,4 +20,5 @@ void hwInit(void)
     MX_DMA2D_Init();
     MX_LTDC_Init();
     MX_TIM16_Init();
+    MX_CRC_Init();
 }

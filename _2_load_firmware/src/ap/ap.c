@@ -13,8 +13,14 @@ void apInit(void)
 {
 //	apCacheInit();
 //	apTimInit();
+//    MX_TouchGFX_Init();
 	apUartInit();
 	apSdramInit();
+
+//	while(true)
+//	{
+//	  MX_TouchGFX_Process();
+//	}
 	LCD_Init();
 }
 

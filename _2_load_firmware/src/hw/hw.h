@@ -18,6 +18,7 @@
 #include "fmc.h"
 #include "dma2d.h"
 #include "ltdc.h"
+#include "crc.h"
 
 
 void hwInit(void);

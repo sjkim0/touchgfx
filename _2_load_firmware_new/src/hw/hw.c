@@ -11,6 +11,7 @@
 
 void hwInit(void)
 {
+	SCB->VTOR = 0x90000000;
 	bspInit();
 	MX_GPIO_Init();
 	MX_DMA_Init();

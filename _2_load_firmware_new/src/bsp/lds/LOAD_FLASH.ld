@@ -50,6 +50,7 @@ MEMORY
   RAM_D3  (xrw)    : ORIGIN = 0x38000000,   LENGTH = 16K
   
   FLASH    (rx)    : ORIGIN = 0x90000000,   LENGTH = 16M
+  RAM_SD  (xrw)    : ORIGIN = 0xC0000000,   LENGTH = 8M
 }
 
 /* Define output sections */

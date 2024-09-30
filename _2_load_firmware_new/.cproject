@@ -56,6 +56,14 @@
 									<listOptionValue builtIn="false" value="../TouchGFX/generated/texts/include"/>
 									<listOptionValue builtIn="false" value="../TouchGFX/generated/videos/include"/>
 									<listOptionValue builtIn="false" value="../TouchGFX/gui/include"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/ap}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/bsp}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/ap/user_ap}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/bsp/startup}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/common/hw/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/hw}&quot;"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.1318787868" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>
@@ -75,6 +83,14 @@
 									<listOptionValue builtIn="false" value="../TouchGFX/generated/texts/include"/>
 									<listOptionValue builtIn="false" value="../TouchGFX/generated/videos/include"/>
 									<listOptionValue builtIn="false" value="../TouchGFX/gui/include"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/ap}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/bsp}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/ap/user_ap}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/bsp/startup}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/common/hw/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/hw}&quot;"/>
 								</option>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.definedsymbols.199216144" name="Define symbols (-D)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.definedsymbols" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
@@ -102,7 +118,7 @@
 							</tool>
 							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.1950169939" name="MCU/MPU G++ Linker" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker">
 								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.option.systemcalls.1441990319" name="System calls" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.option.systemcalls" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.option.systemcalls.value.minimalimplementation" valueType="enumerated"/>
-								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.option.script.588001510" name="Linker Script (-T)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.option.script" value="C:\Users\ksj10\Desktop\_0_programs\_3_GIT_REPO\__PRIVATE\_2_TOUCHGFX\_2_load_firmware_new\EXTERNAL_FLASH.ld" valueType="string"/>
+								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.option.script.588001510" name="Linker Script (-T)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.option.script" value="C:\Users\ksj10\Desktop\_0_programs\_3_GIT_REPO\__PRIVATE\_2_TOUCHGFX\_2_load_firmware_new\src\bsp\lds\LOAD_FLASH.ld" valueType="string"/>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.option.directories.6984311273" name="Library search path (-L)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.option.directories" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LoadFirmwareNew/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc}&quot;"/>
 								</option>
@@ -125,9 +141,9 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
 						<entry excluding="ST/touchgfx/framework/source/platform/hal/simulator/sdl2/HALSDL2.cpp|ST/touchgfx/framework/source/platform/hal/simulator/sdl2/HALSDL2_icon.cpp|ST/touchgfx/framework/source/platform/hal/simulator/sdl2/OSWrappers.cpp|ST/touchgfx/os/OSWrappers_cmsis.cpp|ST/touchgfx/os/OSWrappers.cpp|ST/touchgfx/framework/source/platform/driver/touch/SDL2TouchController.cpp|ST/touchgfx/framework/source/touchgfx/widgets|ST/touchgfx/framework/source/touchgfx/containers" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Middlewares"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -250,9 +266,9 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
 						<entry excluding="ST/touchgfx/framework/source/platform/hal/simulator/sdl2/HALSDL2.cpp|ST/touchgfx/framework/source/platform/hal/simulator/sdl2/HALSDL2_icon.cpp|ST/touchgfx/framework/source/platform/hal/simulator/sdl2/OSWrappers.cpp|ST/touchgfx/os/OSWrappers_cmsis.cpp|ST/touchgfx/os/OSWrappers.cpp|ST/touchgfx/framework/source/platform/driver/touch/SDL2TouchController.cpp|ST/touchgfx/framework/source/touchgfx/widgets|ST/touchgfx/framework/source/touchgfx/containers" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Middlewares"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

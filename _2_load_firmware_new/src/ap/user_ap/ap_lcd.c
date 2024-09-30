@@ -29,7 +29,7 @@ void LCD_Init(void)
   LCD_SelectLayer(0);
   LCD_SetLayerVisible(1, DISABLE);
   LCD_SetLayerVisible(0, ENABLE);
-  LCD_Clear(DEF_LIGHTBLUE);
+  LCD_Clear(DEF_RED);
 
   HAL_Delay(10);
   LCD_SetBackLight(100);

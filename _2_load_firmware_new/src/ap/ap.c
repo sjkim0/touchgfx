@@ -15,8 +15,17 @@ void apInit(void)
 //	apTimInit();
 	apSdramInit();
 	apUartInit();
-
 	LCD_Init();
+
+	while(true)
+	{
+
+	}
+//	MX_TouchGFX_Init();
+//	while (1)
+//	{
+//		MX_TouchGFX_Process();
+//	}
 }
 
 void apMain(void)

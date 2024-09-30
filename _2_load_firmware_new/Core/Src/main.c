@@ -27,6 +27,7 @@
 #include "usart.h"
 #include "gpio.h"
 #include "fmc.h"
+#include "app_touchgfx.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -93,17 +94,6 @@ int main(void)
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
-  uint8_t test = 1;
-  if(test == 1)
-  {
-	  while(1)
-	  {
-		  if(test == 2)
-		  {
-			  break;
-		  }
-	  }
-  }
   MX_GPIO_Init();
   MX_DMA_Init();
   MX_FMC_Init();
@@ -113,6 +103,7 @@ int main(void)
   MX_DMA2D_Init();
   MX_CRC_Init();
   MX_LTDC_Init();
+  MX_TouchGFX_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -123,6 +114,7 @@ int main(void)
   {
     /* USER CODE END WHILE */
 
+  MX_TouchGFX_Process();
     /* USER CODE BEGIN 3 */
 		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
 		HAL_Delay(500);

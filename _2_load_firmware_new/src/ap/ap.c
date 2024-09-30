@@ -17,10 +17,6 @@ void apInit(void)
 	apUartInit();
 	LCD_Init();
 
-	while(true)
-	{
-
-	}
 //	MX_TouchGFX_Init();
 //	while (1)
 //	{

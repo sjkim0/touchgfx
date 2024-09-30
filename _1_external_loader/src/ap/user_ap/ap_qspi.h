@@ -9,6 +9,10 @@
 #define AP_USER_AP_AP_QSPI_H_
 
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 
 #include "ap_def.h"
 
@@ -42,6 +46,11 @@ bool apQspiWrite(uint8_t buff[], uint32_t p_address, uint32_t length);
 
 void apQspiInit(void);
 void apQspiLoop(void);
+
+
+#ifdef __cplusplus
+}
+#endif
 
 
 #endif /* AP_USER_AP_AP_QSPI_H_ */

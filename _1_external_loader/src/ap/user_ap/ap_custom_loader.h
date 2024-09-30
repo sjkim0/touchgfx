@@ -9,6 +9,11 @@
 #define AP_USER_AP_AP_CUSTOM_LOADER_H_
 
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
 #include "ap_def.h"
 
 
@@ -26,6 +31,11 @@ uint8_t CSP_QSPI_Erase_Chip (void);
 
 
 void apCustomLoaderInit(void);
+
+
+#ifdef __cplusplus
+}
+#endif
 
 
 #endif /* AP_USER_AP_AP_CUSTOM_LOADER_H_ */

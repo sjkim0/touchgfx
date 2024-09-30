@@ -9,6 +9,10 @@
 #define COMMON_DEF_H_
 
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 
 #include "stdio.h"
 #include "stdlib.h"
@@ -22,5 +26,9 @@
 #define CS_Pin GPIO_PIN_6
 #define CS_GPIO_Port GPIOB
 
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* COMMON_DEF_H_ */

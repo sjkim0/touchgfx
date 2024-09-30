@@ -9,6 +9,11 @@
 #define AP_USER_AP_AP_UART_H_
 
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
 #include "ap_def.h"
 
 
@@ -19,6 +24,11 @@
 
 void apUartInit(void);
 void apUartLoop(void);
+
+
+#ifdef __cplusplus
+}
+#endif
 
 
 #endif /* AP_USER_AP_AP_UART_H_ */

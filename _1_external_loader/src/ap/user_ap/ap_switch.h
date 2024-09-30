@@ -9,6 +9,11 @@
 #define AP_USER_AP_AP_SWITCH_H_
 
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
 #include "ap_def.h"
 
 
@@ -24,6 +29,11 @@ extern ap_switch_t switch_inst;
 
 void apSwitchInit(void);
 void apSwitchLoop(void);
+
+
+#ifdef __cplusplus
+}
+#endif
 
 
 #endif /* AP_USER_AP_AP_SWITCH_H_ */

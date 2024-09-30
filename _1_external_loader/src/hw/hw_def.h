@@ -9,8 +9,18 @@
 #define HW_HW_DEF_H_
 
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
 #include "def.h"
 #include "bsp.h"
+
+
+#ifdef __cplusplus
+}
+#endif
 
 
 #endif /* HW_HW_DEF_H_ */

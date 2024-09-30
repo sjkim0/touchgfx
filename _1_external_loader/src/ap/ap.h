@@ -9,6 +9,11 @@
 #define AP_AP_H_
 
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
 #include "ap_def.h"
 #include "ap_uart.h"
 #include "ap_qspi.h"
@@ -18,6 +23,11 @@
 
 void apInit(void);
 void apMain(void);
+
+
+#ifdef __cplusplus
+}
+#endif
 
 
 #endif /* AP_AP_H_ */

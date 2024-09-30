@@ -69,7 +69,7 @@ void apUartLoop(void)
 		int now_rx_header = 0;
 
 		now_ndtr = ((DMA_Stream_TypeDef *)hdma_usart1_rx.Instance)->NDTR;
-		now_rx_header = DEF_AP_UART_RX_BUFF_LENGTH - now_ndtr;
+		now_rx_header = DEF_AP_UART_RX_BUFF_LENGTH - 1 - now_ndtr;
 
 		if(now_rx_header != ap_uart_inst.rx_header)
 		{

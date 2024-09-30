@@ -137,10 +137,10 @@ void MPU_Config(void)
   MPU_InitStruct.Size = MPU_REGION_SIZE_16MB;
   MPU_InitStruct.SubRegionDisable = 0x0;
   MPU_InitStruct.DisableExec = MPU_INSTRUCTION_ACCESS_ENABLE;
-  MPU_InitStruct.IsShareable = MPU_ACCESS_NOT_SHAREABLE;
-  MPU_InitStruct.IsCacheable = MPU_ACCESS_NOT_CACHEABLE;
+  MPU_InitStruct.IsShareable = MPU_ACCESS_SHAREABLE;
+  MPU_InitStruct.IsCacheable = MPU_ACCESS_CACHEABLE;
 
-  HAL_MPU_ConfigRegion(&MPU_InitStruct);
+//  HAL_MPU_ConfigRegion(&MPU_InitStruct);
 
   /** Initializes and configures the Region and the memory to be protected
   */

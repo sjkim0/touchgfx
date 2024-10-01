@@ -50,17 +50,11 @@ void apCustomLoaderInit(void)
 	bool jump = true;
 	if(jump == true)
 	{
-//		for(int i = 0; i < 8; i++)
-//		{
-//			NVIC->ICER[i] = 0xFFFFFFFF;
-//			__DSB();
-//			__ISB();
-//		}
-//		SCB->VTOR = 0x90000000;
 		SysTick->CTRL = 0;
 		SysTick->LOAD = 0;
 		SysTick->VAL = 0;
 
+		SCB->VTOR = 0x90000000;
 	    __set_MSP(*(volatile uint32_t*)0x90000000);
 	    uint32_t jump_address = *(volatile uint32_t*)0x90000004;
 		void (*pJump)(void);

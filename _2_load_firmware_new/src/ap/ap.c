@@ -17,11 +17,11 @@ void apInit(void)
 	apUartInit();
 	LCD_Init();
 
-//	MX_TouchGFX_Init();
-//	while (1)
-//	{
-//		MX_TouchGFX_Process();
-//	}
+	MX_TouchGFX_Init();
+	while (1)
+	{
+		MX_TouchGFX_Process();
+	}
 
 }
 

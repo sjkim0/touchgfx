@@ -21,13 +21,19 @@ void bspInit(void)
 //	SCB->VTOR = 0x90000000;
 //	SystemInit();
 
-	HAL_Init();
-	SystemClock_Config();
-
-	SCB_EnableICache();
-	SCB_EnableDCache();
+	SCB->VTOR = 0x90000000;
 
 	MPU_Config();
+	SCB_EnableICache();
+
+	SCB_EnableDCache();
+
+
+	HAL_Init();
+
+	SystemClock_Config();
+
+	__enable_irq();
 }
 
 void delay(uint32_t tick)

@@ -21,11 +21,13 @@ void bspInit(void)
 //	SCB->VTOR = 0x90000000;
 //	SystemInit();
 
-	MPU_Config();
-	SCB_EnableICache();
-	SCB_EnableDCache();
 	HAL_Init();
 	SystemClock_Config();
+
+	SCB_EnableICache();
+	SCB_EnableDCache();
+
+	MPU_Config();
 }
 
 void delay(uint32_t tick)
@@ -129,7 +131,7 @@ void MPU_Config(void)
   MPU_InitStruct.DisableExec = MPU_INSTRUCTION_ACCESS_DISABLE;
   MPU_InitStruct.IsShareable = MPU_ACCESS_SHAREABLE;
   MPU_InitStruct.IsCacheable = MPU_ACCESS_CACHEABLE;
-  MPU_InitStruct.IsBufferable = MPU_ACCESS_NOT_BUFFERABLE;
+  MPU_InitStruct.IsBufferable = MPU_ACCESS_BUFFERABLE;
 
   HAL_MPU_ConfigRegion(&MPU_InitStruct);
 
@@ -139,7 +141,6 @@ void MPU_Config(void)
   MPU_InitStruct.BaseAddress = 0x38000000;
   MPU_InitStruct.Size = MPU_REGION_SIZE_16KB;
   MPU_InitStruct.SubRegionDisable = 0x0;
-  MPU_InitStruct.IsShareable = MPU_ACCESS_NOT_SHAREABLE;
 
   HAL_MPU_ConfigRegion(&MPU_InitStruct);
 
@@ -149,7 +150,8 @@ void MPU_Config(void)
   MPU_InitStruct.BaseAddress = 0x08000000;
   MPU_InitStruct.Size = MPU_REGION_SIZE_128KB;
   MPU_InitStruct.DisableExec = MPU_INSTRUCTION_ACCESS_ENABLE;
-  MPU_InitStruct.IsShareable = MPU_ACCESS_SHAREABLE;
+  MPU_InitStruct.IsShareable = MPU_ACCESS_NOT_SHAREABLE;
+  MPU_InitStruct.IsBufferable = MPU_ACCESS_NOT_BUFFERABLE;
 
   HAL_MPU_ConfigRegion(&MPU_InitStruct);
 
@@ -158,7 +160,6 @@ void MPU_Config(void)
   MPU_InitStruct.Number = MPU_REGION_NUMBER4;
   MPU_InitStruct.BaseAddress = 0x90000000;
   MPU_InitStruct.Size = MPU_REGION_SIZE_16MB;
-  MPU_InitStruct.IsBufferable = MPU_ACCESS_BUFFERABLE;
 
   HAL_MPU_ConfigRegion(&MPU_InitStruct);
   /* Enables the MPU */

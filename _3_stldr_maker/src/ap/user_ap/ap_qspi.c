@@ -257,11 +257,11 @@ bool apQspiEraseSector(uint32_t address)
 
 	apQspiWriteEnable();
 
-	cmd.Instruction = DEF_AP_QSPI_CHIP_ERASE_64K; // chip erase
+	cmd.Instruction = DEF_AP_QSPI_CHIP_ERASE_4K; // chip erase
 	cmd.InstructionMode = HAL_OSPI_INSTRUCTION_1_LINE;
 	cmd.AddressMode = HAL_OSPI_ADDRESS_1_LINE;
 	cmd.AddressSize = HAL_OSPI_ADDRESS_24_BITS;
-	cmd.Address = address * 4096;
+	cmd.Address = address;
 	cmd.DataMode = HAL_OSPI_DATA_NONE;  // Quad mode for data
 	cmd.DummyCycles = 0;  /// fast read에 사용된다고함
 

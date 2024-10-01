@@ -56,6 +56,7 @@ void apCustomLoaderInit(void)
 //			__DSB();
 //			__ISB();
 //		}
+//		SCB->VTOR = 0x90000000;
 		SysTick->CTRL = 0;
 		SysTick->LOAD = 0;
 		SysTick->VAL = 0;

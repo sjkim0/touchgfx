@@ -22,6 +22,7 @@ void apInit(void)
 //	{
 //		MX_TouchGFX_Process();
 //	}
+
 }
 
 void apMain(void)

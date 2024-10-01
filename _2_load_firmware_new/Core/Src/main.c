@@ -23,6 +23,7 @@
 #include "dma2d.h"
 #include "ltdc.h"
 #include "memorymap.h"
+#include "spi.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
@@ -115,6 +116,7 @@ int main(void)
   MX_DMA2D_Init();
   MX_CRC_Init();
   MX_LTDC_Init();
+  MX_SPI4_Init();
   MX_TouchGFX_Init();
   /* USER CODE BEGIN 2 */
 

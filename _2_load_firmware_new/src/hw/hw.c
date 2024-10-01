@@ -22,4 +22,5 @@ void hwInit(void)
     MX_LTDC_Init();
     MX_TIM16_Init();
     MX_CRC_Init();
+    MX_SPI4_Init();
 }

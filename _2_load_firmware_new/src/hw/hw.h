@@ -19,6 +19,7 @@
 #include "dma2d.h"
 #include "ltdc.h"
 #include "crc.h"
+#include "spi.h"
 
 
 void hwInit(void);

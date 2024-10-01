@@ -16,7 +16,7 @@
 #include "ap_tim.h"
 #include "ap_sdram.h"
 #include "ap_lcd.h"
-//#include "app_touchgfx.h"
+#include "app_touchgfx.h"
 
 
 void apInit(void);

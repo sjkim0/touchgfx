@@ -21,6 +21,7 @@
 #ifndef __OCTOSPI_H__
 #define __OCTOSPI_H__
 
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -47,6 +48,7 @@ void MX_OCTOSPI1_Init(void);
 #ifdef __cplusplus
 }
 #endif
+
 
 #endif /* __OCTOSPI_H__ */
 

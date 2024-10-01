@@ -31,20 +31,27 @@ extern "C" void touchgfx_init();
 extern "C" void touchgfx_taskEntry();
 extern "C" void touchgfx_components_init();
 
-static STM32TouchController tc;
-static STM32DMA dma;
-static LCD16bpp display;
-static ApplicationFontProvider fontProvider;
-static Texts texts;
-static TouchGFXHAL hal(dma, display, tc, 800, 480);
+STM32TouchController* tc;
+STM32DMA* dma;
+LCD16bpp* display;
+ApplicationFontProvider* fontProvider;
+Texts* texts;
+TouchGFXHAL* hal;
 
 void touchgfx_init()
 {
+    tc = new STM32TouchController();
+    dma = new STM32DMA();
+    display = new LCD16bpp();
+    fontProvider = new ApplicationFontProvider();
+    texts = new Texts();
+    hal = new TouchGFXHAL(*dma, *display, *tc, 800, 480);
+
     Bitmap::registerBitmapDatabase(BitmapDatabase::getInstance(), BitmapDatabase::getInstanceSize());
-    TypedText::registerTexts(&texts);
+    TypedText::registerTexts(texts);
     Texts::setLanguage(0);
 
-    FontManager::setFontProvider(&fontProvider);
+    FontManager::setFontProvider(fontProvider);
 
     FrontendHeap& heap = FrontendHeap::getInstance();
     /*
@@ -55,7 +62,7 @@ void touchgfx_init()
     /*
      * Initialize TouchGFX
      */
-    hal.initialize();
+    hal->initialize();
 }
 
 void touchgfx_components_init()
@@ -71,7 +78,7 @@ void touchgfx_taskEntry()
      */
     if (OSWrappers::isVSyncAvailable())
     {
-        hal.backPorchExited();
+        hal->backPorchExited();
     }
 }
 

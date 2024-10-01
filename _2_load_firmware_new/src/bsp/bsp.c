@@ -18,6 +18,9 @@ void SystemClock_Config(void);
 
 void bspInit(void)
 {
+	SCB->VTOR = 0x90000000;
+	SystemInit();
+
 	MPU_Config();
 	SCB_EnableICache();
 	SCB_EnableDCache();

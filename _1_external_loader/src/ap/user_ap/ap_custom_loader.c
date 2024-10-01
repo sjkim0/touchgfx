@@ -50,6 +50,12 @@ void apCustomLoaderInit(void)
 	bool jump = true;
 	if(jump == true)
 	{
+//		for(int i = 0; i < 8; i++)
+//		{
+//			NVIC->ICER[i] = 0xFFFFFFFF;
+//			__DSB();
+//			__ISB();
+//		}
 		SysTick->CTRL = 0;
 		SysTick->LOAD = 0;
 		SysTick->VAL = 0;

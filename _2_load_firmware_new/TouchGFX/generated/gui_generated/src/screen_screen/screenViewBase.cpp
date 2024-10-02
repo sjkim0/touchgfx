@@ -168,4 +168,12 @@ void screenViewBase::handleTickEvent()
     //Set RGB color R:255, G:0, B:0 on boxWithBorder1
     boxWithBorder1.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
     boxWithBorder1.invalidate();
+
+    //Interaction2
+    //When every N tick set text textArea1
+    //Set textArea1 text to Resource: __SingleUse_SXYD
+    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_SXYD));
+    textArea1.invalidate();
+    textArea1.resizeToCurrentText();
+    textArea1.invalidate();
 }

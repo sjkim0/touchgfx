@@ -457,6 +457,18 @@
               },
               "ActionComponent": "boxWithBorder1"
             }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 1
+            },
+            "Action": {
+              "Type": "ActionSetText",
+              "TextId": "__SingleUse_SXYD",
+              "ActionComponent": "textArea1"
+            }
           }
         ]
       }

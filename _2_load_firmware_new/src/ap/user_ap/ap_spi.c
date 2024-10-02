@@ -20,8 +20,9 @@ static void _apSpiReadY(void);
 void apSpiInit(void)
 {
     HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, GPIO_PIN_SET);
-	ap_spi_inst.read_x_tx[0] = 0x93;  //  read xp, power always on
-	ap_spi_inst.read_y_tx[0] = 0xD3;  //  read xp, power always on
+    delayWhile(10);
+	ap_spi_inst.read_x_tx[0] = 0x90;  //  read xp, power always on
+	ap_spi_inst.read_y_tx[0] = 0xD0;  //  read xp, power always on
 }
 
 void apSpiLoop(void)

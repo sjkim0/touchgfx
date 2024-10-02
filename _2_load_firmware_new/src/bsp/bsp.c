@@ -18,9 +18,6 @@ void SystemClock_Config(void);
 
 void bspInit(void)
 {
-//	SCB->VTOR = 0x90000000;
-//	SystemInit();
-
 	SCB->VTOR = 0x90000000;
 
 	MPU_Config();
@@ -38,10 +35,7 @@ void bspInit(void)
 
 void delay(uint32_t tick)
 {
-	//@ brief: disable interrupt in external flash
 	HAL_Delay(tick);
-
-//	delayWhile(tick * 5);
 }
 
 void delayWhile(uint32_t tick)
@@ -56,10 +50,7 @@ void delayWhile(uint32_t tick)
 
 uint32_t millis(void)
 {
-	//@ brief: disable interrupt in external flash
-	// return HAL_GetTick();
-
-	return TIM6->CNT;
+    return HAL_GetTick();
 }
 
 void SystemClock_Config(void)

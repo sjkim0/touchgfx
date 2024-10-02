@@ -13,8 +13,11 @@
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
-    if(ap_spi_inst.touch_called == false)
+    if(GPIO_Pin == GPIO_PIN_3)
     {
-        ap_spi_inst.touch_called = true;
+        if(ap_spi_inst.touch_called == false)
+        {
+            ap_spi_inst.touch_called = true;
+        }
     }
 }

@@ -18,11 +18,12 @@ extern "C" {
 
 
 #define DEF_TOUCH_COUNT_MAX  (5U)
-#define DEF_READ_INTERVAL_MS (200U)
+#define DEF_READ_INTERVAL_MS (20U)
 
 
 typedef struct
 {
+    uint32_t test_count;
     uint32_t isr_enable_tick;
 	bool touch_called;
 	bool touch_calculating;

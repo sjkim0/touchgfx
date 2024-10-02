@@ -44,8 +44,11 @@ static void _apSpiReadX(void)
     int index = ap_spi_inst.touch_count;
 
     HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, GPIO_PIN_RESET);
+    delayWhile(1);
 	HAL_SPI_Transmit(&hspi4, ap_spi_inst.read_x_tx, 1, 0xFF);
+	delayWhile(1);
     HAL_SPI_Receive(&hspi4, ap_spi_inst.read_x_rx[index], 2, 0xFF);
+    delayWhile(1);
     HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, GPIO_PIN_SET);
 }
 
@@ -54,8 +57,11 @@ static void _apSpiReadY(void)
     int index = ap_spi_inst.touch_count;
 
     HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, GPIO_PIN_RESET);
+    delayWhile(1);
     HAL_SPI_Transmit(&hspi4, ap_spi_inst.read_y_tx, 1, 0xFF);
+    delayWhile(1);
     HAL_SPI_Receive(&hspi4, ap_spi_inst.read_y_rx[index], 2, 0xFF);
+    delayWhile(1);
     HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, GPIO_PIN_SET);
 }
 
@@ -114,7 +120,10 @@ static void _apTouchISREnable(void)
         ap_spi_inst.touch_calculating = false;
         ap_spi_inst.touch_calculate_done = false;
         ap_spi_inst.touch_called = false;
+
         HAL_NVIC_EnableIRQ(EXTI3_IRQn);
+
+        ap_spi_inst.test_count += 1;  // test
     }
 }
 

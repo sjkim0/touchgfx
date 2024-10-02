@@ -8,7 +8,8 @@
 #include <mvp/View.hpp>
 #include <gui/screen_screen/screenPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
-#include <touchgfx/widgets/Button.hpp>
+#include <touchgfx/widgets/BoxWithBorder.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
 
 class screenViewBase : public touchgfx::View<screenPresenter>
 {
@@ -26,28 +27,27 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
-    touchgfx::Box box1;
-    touchgfx::Button button1;
-    touchgfx::Button button2;
-    touchgfx::Button button3;
-    touchgfx::Button button4;
-    touchgfx::Button button5;
-    touchgfx::Button button6;
-    touchgfx::Button button7;
-    touchgfx::Button button8;
-    touchgfx::Button button9;
+    touchgfx::BoxWithBorder boxWithBorder1;
+    touchgfx::ButtonWithLabel buttonWithLabel1;
+    touchgfx::ButtonWithLabel buttonWithLabel1_1;
+    touchgfx::ButtonWithLabel buttonWithLabel1_2;
+    touchgfx::ButtonWithLabel buttonWithLabel1_3;
+    touchgfx::ButtonWithLabel buttonWithLabel1_1_1;
+    touchgfx::ButtonWithLabel buttonWithLabel1_2_1;
+    touchgfx::ButtonWithLabel buttonWithLabel1_3_1;
+    touchgfx::ButtonWithLabel buttonWithLabel1_1_1_1;
+    touchgfx::ButtonWithLabel buttonWithLabel1_2_1_1;
+    touchgfx::ButtonWithLabel buttonWithLabel1_4;
+    touchgfx::ButtonWithLabel buttonWithLabel1_1_2;
+    touchgfx::ButtonWithLabel buttonWithLabel1_2_2;
+    touchgfx::ButtonWithLabel buttonWithLabel1_3_2;
+    touchgfx::ButtonWithLabel buttonWithLabel1_1_1_2;
+    touchgfx::ButtonWithLabel buttonWithLabel1_2_1_2;
+    touchgfx::ButtonWithLabel buttonWithLabel1_3_1_1;
+    touchgfx::ButtonWithLabel buttonWithLabel1_1_1_1_1;
+    touchgfx::ButtonWithLabel buttonWithLabel1_2_1_1_1;
 
 private:
-
-    /*
-     * Callback Declarations
-     */
-    touchgfx::Callback<screenViewBase, const touchgfx::AbstractButton&> buttonCallback;
-
-    /*
-     * Callback Handler Declarations
-     */
-    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
 };
 

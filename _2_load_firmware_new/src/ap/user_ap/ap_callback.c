@@ -10,6 +10,8 @@
 #include "ap_spi_def.h"
 
 
+#if DEF_AP_CALLBACK_USE
+
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
@@ -21,3 +23,5 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
         }
     }
 }
+
+#endif

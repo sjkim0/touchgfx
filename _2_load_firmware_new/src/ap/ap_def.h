@@ -22,8 +22,8 @@ extern "C" {
 #define DEF_AP_SWITCH_USE 	(0U)
 #define DEF_AP_TIM_USE    	(0U)
 #define DEF_AP_SDRAM_USE  	(1U)
-#define DEF_AP_SPI_USE	    (1U)
-#define DEF_AP_CALLBACK_USE	(1U)
+#define DEF_AP_SPI_USE	    (0U)
+#define DEF_AP_CALLBACK_USE	(0U)
 
 
 #ifdef __cplusplus

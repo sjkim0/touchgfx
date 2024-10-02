@@ -13,11 +13,18 @@ void apInit(void)
 {
 //	apCacheInit();
 //	apTimInit();
-	apSpiInit();
 	apSdramInit();
 	apUartInit();
 	LCD_Init();
 
+	while(true)
+	{
+	    int a = 0;
+	    if(a == 2)
+	    {
+	        break;
+	    }
+	}
 	MX_TouchGFX_Init();
 }
 
@@ -26,6 +33,5 @@ void apMain(void)
 	while(true)
 	{
 		MX_TouchGFX_Process();
-		apSpiLoop();
 	}
 }

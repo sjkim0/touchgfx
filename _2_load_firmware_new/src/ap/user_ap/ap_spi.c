@@ -10,6 +10,9 @@
 #include "ap_spi_def.h"
 
 
+#if DEF_AP_SPI_USE
+
+
 ap_spi_t ap_spi_inst;
 
 
@@ -127,3 +130,5 @@ static void _apTouchISREnable(void)
     }
 }
 
+
+#endif

@@ -143,6 +143,12 @@ screenViewBase::screenViewBase()
     buttonWithLabel1_2_1_1_1.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     buttonWithLabel1_2_1_1_1.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
     add(buttonWithLabel1_2_1_1_1);
+
+    textArea1.setXY(522, 29);
+    textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1.setLinespacing(0);
+    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_KYCS));
+    add(textArea1);
 }
 
 screenViewBase::~screenViewBase()

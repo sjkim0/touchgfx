@@ -10,6 +10,7 @@
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/BoxWithBorder.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
 
 class screenViewBase : public touchgfx::View<screenPresenter>
 {
@@ -47,6 +48,7 @@ protected:
     touchgfx::ButtonWithLabel buttonWithLabel1_3_1_1;
     touchgfx::ButtonWithLabel buttonWithLabel1_1_1_1_1;
     touchgfx::ButtonWithLabel buttonWithLabel1_2_1_1_1;
+    touchgfx::TextArea textArea1;
 
 private:
 

@@ -430,6 +430,17 @@
             },
             "TextRotation": "0",
             "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 522,
+            "Y": 29,
+            "Width": 92,
+            "Height": 20,
+            "TextId": "__SingleUse_KYCS",
+            "TextRotation": "0",
+            "AutoSize": true
           }
         ],
         "Interactions": [

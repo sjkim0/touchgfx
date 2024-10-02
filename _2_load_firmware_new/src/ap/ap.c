@@ -26,5 +26,6 @@ void apMain(void)
 	while(true)
 	{
 		MX_TouchGFX_Process();
+		apSpiLoop();
 	}
 }

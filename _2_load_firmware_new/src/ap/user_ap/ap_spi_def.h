@@ -20,6 +20,7 @@ extern "C" {
 typedef struct
 {
 	bool touch_called;
+    bool touch_calling;
 	uint8_t read_x_tx[1];
 	uint8_t read_x_rx[2];
 	uint8_t read_y_tx[1];

@@ -434,13 +434,14 @@
           {
             "Type": "TextArea",
             "Name": "textArea1",
-            "X": 522,
-            "Y": 29,
+            "X": 496,
+            "Y": 54,
             "Width": 92,
             "Height": 20,
-            "TextId": "__SingleUse_KYCS",
+            "TextId": "__SingleUse_SRDV",
             "TextRotation": "0",
-            "AutoSize": true
+            "AutoSize": true,
+            "Wildcard1": {}
           }
         ],
         "Interactions": [
@@ -451,22 +452,9 @@
               "TickCount": 1
             },
             "Action": {
-              "Type": "ActionSetColor",
-              "Color": {
-                "Red": 255
-              },
-              "ActionComponent": "boxWithBorder1"
-            }
-          },
-          {
-            "InteractionName": "Interaction2",
-            "Trigger": {
-              "Type": "TriggerOnEveryTick",
-              "TickCount": 1
-            },
-            "Action": {
-              "Type": "ActionSetText",
-              "TextId": "__SingleUse_SXYD",
+              "Type": "ActionSetWildcard",
+              "TextId": "__SingleUse_FZ8D",
+              "WildcardLocation": "Wildcard1",
               "ActionComponent": "textArea1"
             }
           }

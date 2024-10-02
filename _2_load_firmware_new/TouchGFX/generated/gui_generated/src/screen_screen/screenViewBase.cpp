@@ -144,10 +144,10 @@ screenViewBase::screenViewBase()
     buttonWithLabel1_2_1_1_1.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
     add(buttonWithLabel1_2_1_1_1);
 
-    textArea1.setXY(522, 29);
+    textArea1.setXY(496, 54);
     textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textArea1.setLinespacing(0);
-    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_KYCS));
+    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_SRDV));
     add(textArea1);
 }
 
@@ -164,15 +164,9 @@ void screenViewBase::setupScreen()
 void screenViewBase::handleTickEvent()
 {
     //Interaction1
-    //When every N tick change color of boxWithBorder1
-    //Set RGB color R:255, G:0, B:0 on boxWithBorder1
-    boxWithBorder1.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
-    boxWithBorder1.invalidate();
-
-    //Interaction2
-    //When every N tick set text textArea1
-    //Set textArea1 text to Resource: __SingleUse_SXYD
-    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_SXYD));
+    //When every N tick set wildcard textArea1
+    //Set textArea1 wildcard to __SingleUse_FZ8D
+    textArea1.setWildcard(touchgfx::TypedText(T___SINGLEUSE_FZ8D).getText());
     textArea1.invalidate();
     textArea1.resizeToCurrentText();
     textArea1.invalidate();

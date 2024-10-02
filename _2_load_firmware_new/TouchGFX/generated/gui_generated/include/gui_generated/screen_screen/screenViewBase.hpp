@@ -17,6 +17,7 @@ public:
     screenViewBase();
     virtual ~screenViewBase();
     virtual void setupScreen();
+    virtual void handleTickEvent();
 
 protected:
     FrontendApplication& application() {

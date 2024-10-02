@@ -432,7 +432,22 @@
             "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
           }
         ],
-        "Interactions": []
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 1
+            },
+            "Action": {
+              "Type": "ActionSetColor",
+              "Color": {
+                "Red": 255
+              },
+              "ActionComponent": "boxWithBorder1"
+            }
+          }
+        ]
       }
     ],
     "CustomContainerDefinitions": [],

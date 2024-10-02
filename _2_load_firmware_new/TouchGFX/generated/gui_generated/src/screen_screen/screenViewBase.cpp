@@ -154,3 +154,12 @@ void screenViewBase::setupScreen()
 {
 
 }
+
+void screenViewBase::handleTickEvent()
+{
+    //Interaction1
+    //When every N tick change color of boxWithBorder1
+    //Set RGB color R:255, G:0, B:0 on boxWithBorder1
+    boxWithBorder1.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
+    boxWithBorder1.invalidate();
+}

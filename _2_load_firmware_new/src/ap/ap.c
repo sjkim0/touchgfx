@@ -13,27 +13,18 @@ void apInit(void)
 {
 //	apCacheInit();
 //	apTimInit();
+	apSpiInit();
 	apSdramInit();
 	apUartInit();
 	LCD_Init();
 
 	MX_TouchGFX_Init();
-	while (1)
-	{
-		MX_TouchGFX_Process();
-	}
-
 }
 
 void apMain(void)
 {
 	while(true)
 	{
-		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
-		delay(100);
-		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
-		delay(100);
-
-		apUartLoop();
+		MX_TouchGFX_Process();
 	}
 }

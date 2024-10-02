@@ -17,11 +17,13 @@ extern "C" {
 #include "hw.h"
 
 
-#define DEF_AP_UART_USE   (1U)
-#define DEF_AP_CACHE_USE  (1U)
-#define DEF_AP_SWITCH_USE (0U)
-#define DEF_AP_TIM_USE    (0U)
-#define DEF_AP_SDRAM_USE  (1U)
+#define DEF_AP_UART_USE   	(1U)
+#define DEF_AP_CACHE_USE  	(1U)
+#define DEF_AP_SWITCH_USE 	(0U)
+#define DEF_AP_TIM_USE    	(0U)
+#define DEF_AP_SDRAM_USE  	(1U)
+#define DEF_AP_SPI_USE	    (1U)
+#define DEF_AP_CALLBACK_USE	(1U)
 
 
 #ifdef __cplusplus

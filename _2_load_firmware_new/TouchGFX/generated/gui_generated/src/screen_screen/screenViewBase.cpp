@@ -3,7 +3,6 @@
 /*********************************************************************************/
 #include <gui_generated/screen_screen/screenViewBase.hpp>
 #include <touchgfx/Color.hpp>
-#include <images/BitmapDatabase.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
 
 screenViewBase::screenViewBase()
@@ -18,136 +17,10 @@ screenViewBase::screenViewBase()
     boxWithBorder1.setBorderSize(5);
     add(boxWithBorder1);
 
-    buttonWithLabel1.setXY(10, 14);
-    buttonWithLabel1.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
-    buttonWithLabel1.setLabelText(touchgfx::TypedText(T___SINGLEUSE_Y6FX));
-    buttonWithLabel1.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonWithLabel1.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    add(buttonWithLabel1);
-
-    buttonWithLabel1_1.setXY(10, 64);
-    buttonWithLabel1_1.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
-    buttonWithLabel1_1.setLabelText(touchgfx::TypedText(T___SINGLEUSE_CR9N));
-    buttonWithLabel1_1.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonWithLabel1_1.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    add(buttonWithLabel1_1);
-
-    buttonWithLabel1_2.setXY(10, 114);
-    buttonWithLabel1_2.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
-    buttonWithLabel1_2.setLabelText(touchgfx::TypedText(T___SINGLEUSE_ZIK2));
-    buttonWithLabel1_2.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonWithLabel1_2.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    add(buttonWithLabel1_2);
-
-    buttonWithLabel1_3.setXY(10, 164);
-    buttonWithLabel1_3.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
-    buttonWithLabel1_3.setLabelText(touchgfx::TypedText(T___SINGLEUSE_LZML));
-    buttonWithLabel1_3.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonWithLabel1_3.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    add(buttonWithLabel1_3);
-
-    buttonWithLabel1_1_1.setXY(10, 214);
-    buttonWithLabel1_1_1.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
-    buttonWithLabel1_1_1.setLabelText(touchgfx::TypedText(T___SINGLEUSE_NWPZ));
-    buttonWithLabel1_1_1.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonWithLabel1_1_1.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    add(buttonWithLabel1_1_1);
-
-    buttonWithLabel1_2_1.setXY(10, 264);
-    buttonWithLabel1_2_1.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
-    buttonWithLabel1_2_1.setLabelText(touchgfx::TypedText(T___SINGLEUSE_8UCK));
-    buttonWithLabel1_2_1.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonWithLabel1_2_1.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    add(buttonWithLabel1_2_1);
-
-    buttonWithLabel1_3_1.setXY(10, 314);
-    buttonWithLabel1_3_1.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
-    buttonWithLabel1_3_1.setLabelText(touchgfx::TypedText(T___SINGLEUSE_NSMP));
-    buttonWithLabel1_3_1.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonWithLabel1_3_1.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    add(buttonWithLabel1_3_1);
-
-    buttonWithLabel1_1_1_1.setXY(10, 364);
-    buttonWithLabel1_1_1_1.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
-    buttonWithLabel1_1_1_1.setLabelText(touchgfx::TypedText(T___SINGLEUSE_K4JU));
-    buttonWithLabel1_1_1_1.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonWithLabel1_1_1_1.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    add(buttonWithLabel1_1_1_1);
-
-    buttonWithLabel1_2_1_1.setXY(10, 414);
-    buttonWithLabel1_2_1_1.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
-    buttonWithLabel1_2_1_1.setLabelText(touchgfx::TypedText(T___SINGLEUSE_XKMS));
-    buttonWithLabel1_2_1_1.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonWithLabel1_2_1_1.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    add(buttonWithLabel1_2_1_1);
-
-    buttonWithLabel1_4.setXY(250, 14);
-    buttonWithLabel1_4.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
-    buttonWithLabel1_4.setLabelText(touchgfx::TypedText(T___SINGLEUSE_UDGK));
-    buttonWithLabel1_4.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonWithLabel1_4.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    add(buttonWithLabel1_4);
-
-    buttonWithLabel1_1_2.setXY(250, 64);
-    buttonWithLabel1_1_2.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
-    buttonWithLabel1_1_2.setLabelText(touchgfx::TypedText(T___SINGLEUSE_Z7MC));
-    buttonWithLabel1_1_2.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonWithLabel1_1_2.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    add(buttonWithLabel1_1_2);
-
-    buttonWithLabel1_2_2.setXY(250, 114);
-    buttonWithLabel1_2_2.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
-    buttonWithLabel1_2_2.setLabelText(touchgfx::TypedText(T___SINGLEUSE_V83H));
-    buttonWithLabel1_2_2.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonWithLabel1_2_2.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    add(buttonWithLabel1_2_2);
-
-    buttonWithLabel1_3_2.setXY(250, 164);
-    buttonWithLabel1_3_2.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
-    buttonWithLabel1_3_2.setLabelText(touchgfx::TypedText(T___SINGLEUSE_1MWF));
-    buttonWithLabel1_3_2.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonWithLabel1_3_2.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    add(buttonWithLabel1_3_2);
-
-    buttonWithLabel1_1_1_2.setXY(250, 214);
-    buttonWithLabel1_1_1_2.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
-    buttonWithLabel1_1_1_2.setLabelText(touchgfx::TypedText(T___SINGLEUSE_4V42));
-    buttonWithLabel1_1_1_2.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonWithLabel1_1_1_2.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    add(buttonWithLabel1_1_1_2);
-
-    buttonWithLabel1_2_1_2.setXY(250, 264);
-    buttonWithLabel1_2_1_2.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
-    buttonWithLabel1_2_1_2.setLabelText(touchgfx::TypedText(T___SINGLEUSE_U536));
-    buttonWithLabel1_2_1_2.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonWithLabel1_2_1_2.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    add(buttonWithLabel1_2_1_2);
-
-    buttonWithLabel1_3_1_1.setXY(250, 314);
-    buttonWithLabel1_3_1_1.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
-    buttonWithLabel1_3_1_1.setLabelText(touchgfx::TypedText(T___SINGLEUSE_U6FN));
-    buttonWithLabel1_3_1_1.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonWithLabel1_3_1_1.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    add(buttonWithLabel1_3_1_1);
-
-    buttonWithLabel1_1_1_1_1.setXY(250, 364);
-    buttonWithLabel1_1_1_1_1.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
-    buttonWithLabel1_1_1_1_1.setLabelText(touchgfx::TypedText(T___SINGLEUSE_E0ZR));
-    buttonWithLabel1_1_1_1_1.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonWithLabel1_1_1_1_1.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    add(buttonWithLabel1_1_1_1_1);
-
-    buttonWithLabel1_2_1_1_1.setXY(250, 414);
-    buttonWithLabel1_2_1_1_1.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
-    buttonWithLabel1_2_1_1_1.setLabelText(touchgfx::TypedText(T___SINGLEUSE_TPP5));
-    buttonWithLabel1_2_1_1_1.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonWithLabel1_2_1_1_1.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    add(buttonWithLabel1_2_1_1_1);
-
-    textArea1.setXY(496, 54);
+    textArea1.setXY(354, 229);
     textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textArea1.setLinespacing(0);
-    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_SRDV));
+    textArea1.setTypedText(touchgfx::TypedText(T_TEXTBUFFER1));
     add(textArea1);
 }
 
@@ -159,15 +32,4 @@ screenViewBase::~screenViewBase()
 void screenViewBase::setupScreen()
 {
 
-}
-
-void screenViewBase::handleTickEvent()
-{
-    //Interaction1
-    //When every N tick set wildcard textArea1
-    //Set textArea1 wildcard to __SingleUse_FZ8D
-    textArea1.setWildcard(touchgfx::TypedText(T___SINGLEUSE_FZ8D).getText());
-    textArea1.invalidate();
-    textArea1.resizeToCurrentText();
-    textArea1.invalidate();
 }

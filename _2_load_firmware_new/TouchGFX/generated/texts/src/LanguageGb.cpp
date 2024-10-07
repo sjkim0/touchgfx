@@ -10,24 +10,6 @@ KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE;
 // Remap all strings
 TEXT_LOCATION_FLASH_PRAGMA
 KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
-    10, // T___SINGLEUSE_FZ8D: "WILD CARD??"
-    0,  // T___SINGLEUSE_SRDV: "New Text<>"
-    22, // T___SINGLEUSE_UDGK: "New Text"
-    22, // T___SINGLEUSE_Z7MC: "New Text"
-    22, // T___SINGLEUSE_V83H: "New Text"
-    22, // T___SINGLEUSE_1MWF: "New Text"
-    22, // T___SINGLEUSE_4V42: "New Text"
-    22, // T___SINGLEUSE_U536: "New Text"
-    22, // T___SINGLEUSE_U6FN: "New Text"
-    22, // T___SINGLEUSE_E0ZR: "New Text"
-    22, // T___SINGLEUSE_TPP5: "New Text"
-    22, // T___SINGLEUSE_NSMP: "New Text"
-    22, // T___SINGLEUSE_K4JU: "New Text"
-    22, // T___SINGLEUSE_XKMS: "New Text"
-    22, // T___SINGLEUSE_LZML: "New Text"
-    22, // T___SINGLEUSE_NWPZ: "New Text"
-    22, // T___SINGLEUSE_8UCK: "New Text"
-    22, // T___SINGLEUSE_ZIK2: "New Text"
-    22, // T___SINGLEUSE_CR9N: "New Text"
-    22  // T___SINGLEUSE_Y6FX: "New Text"
+    0, // T_TEXTBUFFER1: "New Text"
+    8  // T_MY_WILD_CARD: ""
 };

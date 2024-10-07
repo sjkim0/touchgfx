@@ -9,8 +9,7 @@
 #include <gui/screen_screen/screenPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/BoxWithBorder.hpp>
-#include <touchgfx/widgets/ButtonWithLabel.hpp>
-#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
 
 class screenViewBase : public touchgfx::View<screenPresenter>
 {
@@ -18,7 +17,6 @@ public:
     screenViewBase();
     virtual ~screenViewBase();
     virtual void setupScreen();
-    virtual void handleTickEvent();
 
 protected:
     FrontendApplication& application() {
@@ -30,25 +28,7 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::BoxWithBorder boxWithBorder1;
-    touchgfx::ButtonWithLabel buttonWithLabel1;
-    touchgfx::ButtonWithLabel buttonWithLabel1_1;
-    touchgfx::ButtonWithLabel buttonWithLabel1_2;
-    touchgfx::ButtonWithLabel buttonWithLabel1_3;
-    touchgfx::ButtonWithLabel buttonWithLabel1_1_1;
-    touchgfx::ButtonWithLabel buttonWithLabel1_2_1;
-    touchgfx::ButtonWithLabel buttonWithLabel1_3_1;
-    touchgfx::ButtonWithLabel buttonWithLabel1_1_1_1;
-    touchgfx::ButtonWithLabel buttonWithLabel1_2_1_1;
-    touchgfx::ButtonWithLabel buttonWithLabel1_4;
-    touchgfx::ButtonWithLabel buttonWithLabel1_1_2;
-    touchgfx::ButtonWithLabel buttonWithLabel1_2_2;
-    touchgfx::ButtonWithLabel buttonWithLabel1_3_2;
-    touchgfx::ButtonWithLabel buttonWithLabel1_1_1_2;
-    touchgfx::ButtonWithLabel buttonWithLabel1_2_1_2;
-    touchgfx::ButtonWithLabel buttonWithLabel1_3_1_1;
-    touchgfx::ButtonWithLabel buttonWithLabel1_1_1_1_1;
-    touchgfx::ButtonWithLabel buttonWithLabel1_2_1_1_1;
-    touchgfx::TextAreaWithOneWildcard textArea1;
+    touchgfx::TextArea textArea1;
 
 private:
 

@@ -6,65 +6,11 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
-      <Text Id="__SingleUse_FZ8D" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">WILD CARD??</Translation>
-      </Text>
-      <Text Id="__SingleUse_SRDV" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">New Text&lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_UDGK" Alignment="Center" TypographyId="Default">
+      <Text Id="textBuffer1" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">New Text</Translation>
       </Text>
-      <Text Id="__SingleUse_Z7MC" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">New Text</Translation>
-      </Text>
-      <Text Id="__SingleUse_V83H" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">New Text</Translation>
-      </Text>
-      <Text Id="__SingleUse_1MWF" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">New Text</Translation>
-      </Text>
-      <Text Id="__SingleUse_4V42" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">New Text</Translation>
-      </Text>
-      <Text Id="__SingleUse_U536" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">New Text</Translation>
-      </Text>
-      <Text Id="__SingleUse_U6FN" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">New Text</Translation>
-      </Text>
-      <Text Id="__SingleUse_E0ZR" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">New Text</Translation>
-      </Text>
-      <Text Id="__SingleUse_TPP5" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">New Text</Translation>
-      </Text>
-      <Text Id="__SingleUse_NSMP" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">New Text</Translation>
-      </Text>
-      <Text Id="__SingleUse_K4JU" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">New Text</Translation>
-      </Text>
-      <Text Id="__SingleUse_XKMS" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">New Text</Translation>
-      </Text>
-      <Text Id="__SingleUse_LZML" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">New Text</Translation>
-      </Text>
-      <Text Id="__SingleUse_NWPZ" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">New Text</Translation>
-      </Text>
-      <Text Id="__SingleUse_8UCK" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">New Text</Translation>
-      </Text>
-      <Text Id="__SingleUse_ZIK2" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">New Text</Translation>
-      </Text>
-      <Text Id="__SingleUse_CR9N" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">New Text</Translation>
-      </Text>
-      <Text Id="__SingleUse_Y6FX" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">New Text</Translation>
+      <Text Id="my_wild_card" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB"></Translation>
       </Text>
     </TextGroup>
   </Texts>

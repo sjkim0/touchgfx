@@ -16,15 +16,6 @@ void apInit(void)
 	apSdramInit();
 	apUartInit();
 	LCD_Init();
-
-	while(true)
-	{
-	    int a = 0;
-	    if(a == 2)
-	    {
-	        break;
-	    }
-	}
 	MX_TouchGFX_Init();
 }
 

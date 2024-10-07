@@ -24,6 +24,12 @@
     <ClCompile Include="..\..\gui\src\screen_screen\screenView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\screen_screen\screenViewBase.cpp"/>
     <ClCompile Include="..\..\generated\simulator\src\video\SoftwareMJPEGDecoder.cpp"/>
+    <ClCompile Include="..\..\gui\src\containers\CustomContainer1.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\containers\CustomContainer1Base.cpp"/>
+    <ClCompile Include="..\..\gui\src\containers\CustomContainer2.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\containers\CustomContainer2Base.cpp"/>
+    <ClCompile Include="..\..\gui\src\containers\CustomContainer3.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\containers\CustomContainer3Base.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -177,6 +183,12 @@
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_screen\screenViewBase.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\common\SimConstants.hpp"/>
     <ClInclude Include="..\..\generated\simulator\include\simulator\video\SoftwareMJPEGDecoder.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\containers\CustomContainer1.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\CustomContainer1Base.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\containers\CustomContainer2.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\CustomContainer2Base.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\containers\CustomContainer3.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\CustomContainer3Base.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

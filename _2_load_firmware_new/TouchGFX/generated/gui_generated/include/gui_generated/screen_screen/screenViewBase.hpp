@@ -8,8 +8,12 @@
 #include <mvp/View.hpp>
 #include <gui/screen_screen/screenPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
-#include <touchgfx/widgets/BoxWithBorder.hpp>
+#include <touchgfx/containers/Container.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/BoxWithBorder.hpp>
+#include <touchgfx/containers/buttons/Buttons.hpp>
+#include <touchgfx/widgets/canvas/Line.hpp>
+#include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 
 class screenViewBase : public touchgfx::View<screenPresenter>
 {
@@ -17,6 +21,15 @@ public:
     screenViewBase();
     virtual ~screenViewBase();
     virtual void setupScreen();
+    virtual void handleTickEvent();
+
+    /*
+     * Virtual Action Handlers
+     */
+    virtual void function1()
+    {
+        // Override and implement this function in screen
+    }
 
 protected:
     FrontendApplication& application() {
@@ -27,10 +40,83 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
-    touchgfx::BoxWithBorder boxWithBorder1;
+    touchgfx::Container container_frame;
+    touchgfx::Box box4;
+    touchgfx::Box box5;
+    touchgfx::Container container_descript;
     touchgfx::TextArea textArea1;
+    touchgfx::TextArea textArea1_1;
+    touchgfx::TextArea textArea1_1_1;
+    touchgfx::BoxWithBorder boxWithBorder1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton1_1;
+    touchgfx::TextArea textArea2;
+    touchgfx::TextArea textArea2_1;
+    touchgfx::TextArea textArea2_1_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton2;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton2_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton2_1_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton3;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton3_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton3_1_1;
+    touchgfx::Line line1;
+    touchgfx::PainterRGB565 line1Painter;
+    touchgfx::Line line1_2;
+    touchgfx::PainterRGB565 line1_2Painter;
+    touchgfx::Line line1_1;
+    touchgfx::PainterRGB565 line1_1Painter;
+    touchgfx::Container container_menu;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton2_1_1_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton2_1_1_2;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton2_1_1_2_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton2_1_1_2_2;
+    touchgfx::Container container_state;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton4;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton4_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton4_1_4;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton4_1_4_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton4_1_4_1_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton4_1_3;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton4_1_2;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton4_1_1;
+    touchgfx::Container container_table;
+    touchgfx::Box box3;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_2_1_1_1_1_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_4_1_1_1_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_3_1_1_1_1_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_1_1_1_1_1_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_2;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_3;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_2_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_4;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_3_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_1_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_2_1_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_4_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_3_1_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_1_1_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_2_1_1_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_4_1_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_3_1_1_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_1_1_1_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_2_1_1_1_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_4_1_1_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_3_1_1_1_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_1_1_1_1_1;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_2_1_1_1_1_2;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_4_1_1_1_2;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_3_1_1_1_1_2;
+    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_1_1_1_1_1_2;
 
 private:
+
+    /*
+     * Canvas Buffer Size
+     */
+    static const uint32_t CANVAS_BUFFER_SIZE = 12000;
+    uint8_t canvasBuffer[CANVAS_BUFFER_SIZE];
 
 };
 

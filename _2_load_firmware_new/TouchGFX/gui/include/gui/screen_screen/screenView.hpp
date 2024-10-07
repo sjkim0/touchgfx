@@ -11,6 +11,7 @@ public:
     virtual ~screenView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+    virtual void gfxTickCallback();
 protected:
 };
 

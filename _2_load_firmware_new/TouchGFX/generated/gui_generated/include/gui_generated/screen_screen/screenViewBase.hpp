@@ -26,7 +26,7 @@ public:
     /*
      * Virtual Action Handlers
      */
-    virtual void function1()
+    virtual void gfxTickCallback()
     {
         // Override and implement this function in screen
     }
@@ -81,34 +81,82 @@ protected:
     touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton4_1_1;
     touchgfx::Container container_table;
     touchgfx::Box box3;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_2_1_1_1_1_1;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_4_1_1_1_1;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_3_1_1_1_1_1;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_1_1_1_1_1_1;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_2;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_3;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_1;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_2_1;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_4;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_3_1;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_1_1;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_2_1_1;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_4_1;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_3_1_1;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_1_1_1;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_2_1_1_1;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_4_1_1;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_3_1_1_1;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_1_1_1_1;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_2_1_1_1_1;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_4_1_1_1;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_3_1_1_1_1;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_1_1_1_1_1;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_2_1_1_1_1_2;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_4_1_1_1_2;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_3_1_1_1_1_2;
-    touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_1_1_1_1_1_2;
+    touchgfx::WildcardTextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_2_1;
+    touchgfx::WildcardTextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_4;
+    touchgfx::WildcardTextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_3_1;
+    touchgfx::WildcardTextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton5_1_1;
+    touchgfx::WildcardTextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flxbutt_tb_0_0;
+    touchgfx::WildcardTextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flxbutt_tb_0_2;
+    touchgfx::WildcardTextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flxbutt_tb_0_3;
+    touchgfx::WildcardTextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flxbutt_tb_0_1;
+    touchgfx::WildcardTextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flxbutt_tb_1_0;
+    touchgfx::WildcardTextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flxbutt_tb_1_2;
+    touchgfx::WildcardTextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flxbutt_tb_1_3;
+    touchgfx::WildcardTextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flxbutt_tb_1_1;
+    touchgfx::WildcardTextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flxbutt_tb_2_0;
+    touchgfx::WildcardTextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flxbutt_tb_2_2;
+    touchgfx::WildcardTextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flxbutt_tb_2_3;
+    touchgfx::WildcardTextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flxbutt_tb_2_1;
+    touchgfx::WildcardTextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flxbutt_tb_3_0;
+    touchgfx::WildcardTextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flxbutt_tb_3_2;
+    touchgfx::WildcardTextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flxbutt_tb_3_3;
+    touchgfx::WildcardTextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flxbutt_tb_3_1;
+    touchgfx::WildcardTextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flxbutt_tb_4_0;
+    touchgfx::WildcardTextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flxbutt_tb_4_2;
+    touchgfx::WildcardTextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flxbutt_tb_4_3;
+    touchgfx::WildcardTextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flxbutt_tb_4_1;
+
+    /*
+     * Wildcard Buffers
+     */
+    static const uint16_t FLEXBUTTON5_2_1_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar flexButton5_2_1Buffer[FLEXBUTTON5_2_1_SIZE];
+    static const uint16_t FLEXBUTTON5_4_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar flexButton5_4Buffer[FLEXBUTTON5_4_SIZE];
+    static const uint16_t FLEXBUTTON5_3_1_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar flexButton5_3_1Buffer[FLEXBUTTON5_3_1_SIZE];
+    static const uint16_t FLEXBUTTON5_1_1_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar flexButton5_1_1Buffer[FLEXBUTTON5_1_1_SIZE];
+    static const uint16_t FLXBUTT_TB_0_0_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar flxbutt_tb_0_0Buffer[FLXBUTT_TB_0_0_SIZE];
+    static const uint16_t FLXBUTT_TB_0_2_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar flxbutt_tb_0_2Buffer[FLXBUTT_TB_0_2_SIZE];
+    static const uint16_t FLXBUTT_TB_0_3_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar flxbutt_tb_0_3Buffer[FLXBUTT_TB_0_3_SIZE];
+    static const uint16_t FLXBUTT_TB_0_1_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar flxbutt_tb_0_1Buffer[FLXBUTT_TB_0_1_SIZE];
+    static const uint16_t FLXBUTT_TB_1_0_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar flxbutt_tb_1_0Buffer[FLXBUTT_TB_1_0_SIZE];
+    static const uint16_t FLXBUTT_TB_1_2_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar flxbutt_tb_1_2Buffer[FLXBUTT_TB_1_2_SIZE];
+    static const uint16_t FLXBUTT_TB_1_3_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar flxbutt_tb_1_3Buffer[FLXBUTT_TB_1_3_SIZE];
+    static const uint16_t FLXBUTT_TB_1_1_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar flxbutt_tb_1_1Buffer[FLXBUTT_TB_1_1_SIZE];
+    static const uint16_t FLXBUTT_TB_2_0_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar flxbutt_tb_2_0Buffer[FLXBUTT_TB_2_0_SIZE];
+    static const uint16_t FLXBUTT_TB_2_2_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar flxbutt_tb_2_2Buffer[FLXBUTT_TB_2_2_SIZE];
+    static const uint16_t FLXBUTT_TB_2_3_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar flxbutt_tb_2_3Buffer[FLXBUTT_TB_2_3_SIZE];
+    static const uint16_t FLXBUTT_TB_2_1_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar flxbutt_tb_2_1Buffer[FLXBUTT_TB_2_1_SIZE];
+    static const uint16_t FLXBUTT_TB_3_0_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar flxbutt_tb_3_0Buffer[FLXBUTT_TB_3_0_SIZE];
+    static const uint16_t FLXBUTT_TB_3_2_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar flxbutt_tb_3_2Buffer[FLXBUTT_TB_3_2_SIZE];
+    static const uint16_t FLXBUTT_TB_3_3_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar flxbutt_tb_3_3Buffer[FLXBUTT_TB_3_3_SIZE];
+    static const uint16_t FLXBUTT_TB_3_1_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar flxbutt_tb_3_1Buffer[FLXBUTT_TB_3_1_SIZE];
+    static const uint16_t FLXBUTT_TB_4_0_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar flxbutt_tb_4_0Buffer[FLXBUTT_TB_4_0_SIZE];
+    static const uint16_t FLXBUTT_TB_4_2_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar flxbutt_tb_4_2Buffer[FLXBUTT_TB_4_2_SIZE];
+    static const uint16_t FLXBUTT_TB_4_3_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar flxbutt_tb_4_3Buffer[FLXBUTT_TB_4_3_SIZE];
+    static const uint16_t FLXBUTT_TB_4_1_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar flxbutt_tb_4_1Buffer[FLXBUTT_TB_4_1_SIZE];
 
 private:
 

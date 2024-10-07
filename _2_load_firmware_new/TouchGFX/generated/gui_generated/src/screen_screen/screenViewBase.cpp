@@ -169,7 +169,7 @@ screenViewBase::screenViewBase()
 
     add(container_descript);
 
-    container_menu.setPosition(0, 191, 160, 289);
+    container_menu.setPosition(-7, 191, 160, 289);
     flexButton2_1_1_1.setBoxWithBorderPosition(0, 0, 150, 50);
     flexButton2_1_1_1.setBorderSize(2);
     flexButton2_1_1_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -224,7 +224,7 @@ screenViewBase::screenViewBase()
     flexButton4_1.setText(TypedText(T___SINGLEUSE_8TGA));
     flexButton4_1.setTextPosition(0, 4, 50, 34);
     flexButton4_1.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton4_1.setPosition(240, 7, 50, 34);
+    flexButton4_1.setPosition(230, 7, 50, 34);
     container_state.add(flexButton4_1);
 
     flexButton4_1_4.setBoxWithBorderPosition(0, 0, 50, 34);
@@ -260,7 +260,7 @@ screenViewBase::screenViewBase()
     flexButton4_1_3.setText(TypedText(T___SINGLEUSE_1ZMM));
     flexButton4_1_3.setTextPosition(0, 4, 50, 34);
     flexButton4_1_3.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton4_1_3.setPosition(181, 7, 50, 34);
+    flexButton4_1_3.setPosition(176, 7, 50, 34);
     container_state.add(flexButton4_1_3);
 
     flexButton4_1_2.setBoxWithBorderPosition(0, 0, 50, 34);
@@ -269,7 +269,7 @@ screenViewBase::screenViewBase()
     flexButton4_1_2.setText(TypedText(T___SINGLEUSE_UV5U));
     flexButton4_1_2.setTextPosition(0, 4, 50, 34);
     flexButton4_1_2.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton4_1_2.setPosition(124, 7, 50, 34);
+    flexButton4_1_2.setPosition(122, 7, 50, 34);
     container_state.add(flexButton4_1_2);
 
     flexButton4_1_1.setBoxWithBorderPosition(0, 0, 50, 34);
@@ -283,262 +283,274 @@ screenViewBase::screenViewBase()
 
     add(container_state);
 
-    container_table.setPosition(175, 240, 615, 229);
-    box3.setPosition(-1, 0, 616, 230);
+    container_table.setPosition(175, 240, 615, 230);
+    box3.setPosition(0, 0, 615, 230);
     box3.setColor(touchgfx::Color::getColorFromRGB(148, 148, 148));
     container_table.add(box3);
-
-    flexButton5_2_1_1_1_1_1.setBoxWithBorderPosition(0, 0, 153, 45);
-    flexButton5_2_1_1_1_1_1.setBorderSize(0);
-    flexButton5_2_1_1_1_1_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_2_1_1_1_1_1.setText(TypedText(T___SINGLEUSE_WW3L));
-    flexButton5_2_1_1_1_1_1.setTextPosition(0, 10, 153, 45);
-    flexButton5_2_1_1_1_1_1.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_2_1_1_1_1_1.setPosition(0, 138, 153, 45);
-    container_table.add(flexButton5_2_1_1_1_1_1);
-
-    flexButton5_4_1_1_1_1.setBoxWithBorderPosition(0, 0, 153, 45);
-    flexButton5_4_1_1_1_1.setBorderSize(0);
-    flexButton5_4_1_1_1_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_4_1_1_1_1.setText(TypedText(T___SINGLEUSE_WG16));
-    flexButton5_4_1_1_1_1.setTextPosition(0, 10, 153, 45);
-    flexButton5_4_1_1_1_1.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_4_1_1_1_1.setPosition(308, 138, 153, 45);
-    container_table.add(flexButton5_4_1_1_1_1);
-
-    flexButton5_3_1_1_1_1_1.setBoxWithBorderPosition(0, 0, 153, 45);
-    flexButton5_3_1_1_1_1_1.setBorderSize(0);
-    flexButton5_3_1_1_1_1_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_3_1_1_1_1_1.setText(TypedText(T___SINGLEUSE_EC9K));
-    flexButton5_3_1_1_1_1_1.setTextPosition(0, 10, 153, 45);
-    flexButton5_3_1_1_1_1_1.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_3_1_1_1_1_1.setPosition(462, 138, 153, 45);
-    container_table.add(flexButton5_3_1_1_1_1_1);
-
-    flexButton5_1_1_1_1_1_1.setBoxWithBorderPosition(0, 0, 153, 45);
-    flexButton5_1_1_1_1_1_1.setBorderSize(0);
-    flexButton5_1_1_1_1_1_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_1_1_1_1_1_1.setText(TypedText(T___SINGLEUSE_ASAF));
-    flexButton5_1_1_1_1_1_1.setTextPosition(0, 10, 153, 45);
-    flexButton5_1_1_1_1_1_1.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_1_1_1_1_1_1.setPosition(154, 138, 153, 45);
-    container_table.add(flexButton5_1_1_1_1_1_1);
-
-    flexButton5_2.setBoxWithBorderPosition(0, 0, 153, 45);
-    flexButton5_2.setBorderSize(0);
-    flexButton5_2.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_2.setText(TypedText(T___SINGLEUSE_QT99));
-    flexButton5_2.setTextPosition(0, 10, 153, 45);
-    flexButton5_2.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_2.setPosition(0, 0, 153, 45);
-    container_table.add(flexButton5_2);
-
-    flexButton5.setBoxWithBorderPosition(0, 0, 153, 45);
-    flexButton5.setBorderSize(0);
-    flexButton5.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5.setText(TypedText(T___SINGLEUSE_V63P));
-    flexButton5.setTextPosition(0, 10, 153, 45);
-    flexButton5.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5.setPosition(308, 0, 153, 45);
-    container_table.add(flexButton5);
-
-    flexButton5_3.setBoxWithBorderPosition(0, 0, 153, 45);
-    flexButton5_3.setBorderSize(0);
-    flexButton5_3.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_3.setText(TypedText(T___SINGLEUSE_TLVX));
-    flexButton5_3.setTextPosition(0, 10, 153, 45);
-    flexButton5_3.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_3.setPosition(462, 0, 153, 45);
-    container_table.add(flexButton5_3);
-
-    flexButton5_1.setBoxWithBorderPosition(0, 0, 153, 45);
-    flexButton5_1.setBorderSize(0);
-    flexButton5_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_1.setText(TypedText(T___SINGLEUSE_9YIX));
-    flexButton5_1.setTextPosition(0, 10, 153, 45);
-    flexButton5_1.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_1.setPosition(154, 0, 153, 45);
-    container_table.add(flexButton5_1);
 
     flexButton5_2_1.setBoxWithBorderPosition(0, 0, 153, 45);
     flexButton5_2_1.setBorderSize(0);
     flexButton5_2_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_2_1.setText(TypedText(T___SINGLEUSE_XEYI));
-    flexButton5_2_1.setTextPosition(0, 10, 153, 45);
-    flexButton5_2_1.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_2_1.setPosition(0, 46, 153, 45);
+    flexButton5_2_1.setWildcardText(TypedText(T___SINGLEUSE_O2SH));
+    Unicode::snprintf(flexButton5_2_1Buffer, FLEXBUTTON5_2_1_SIZE, "%s", TypedText(T___SINGLEUSE_QBS3).getText());
+    flexButton5_2_1.setWildcardTextBuffer(flexButton5_2_1Buffer);
+    flexButton5_2_1.setWildcardTextPosition(0, 10, 153, 45);
+    flexButton5_2_1.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flexButton5_2_1.setPosition(0, 0, 153, 45);
     container_table.add(flexButton5_2_1);
 
     flexButton5_4.setBoxWithBorderPosition(0, 0, 153, 45);
     flexButton5_4.setBorderSize(0);
     flexButton5_4.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_4.setText(TypedText(T___SINGLEUSE_TW0L));
-    flexButton5_4.setTextPosition(0, 10, 153, 45);
-    flexButton5_4.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_4.setPosition(308, 46, 153, 45);
+    flexButton5_4.setWildcardText(TypedText(T___SINGLEUSE_2LNP));
+    Unicode::snprintf(flexButton5_4Buffer, FLEXBUTTON5_4_SIZE, "%s", TypedText(T___SINGLEUSE_GVAJ).getText());
+    flexButton5_4.setWildcardTextBuffer(flexButton5_4Buffer);
+    flexButton5_4.setWildcardTextPosition(0, 10, 153, 45);
+    flexButton5_4.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flexButton5_4.setPosition(308, 0, 153, 45);
     container_table.add(flexButton5_4);
 
     flexButton5_3_1.setBoxWithBorderPosition(0, 0, 153, 45);
     flexButton5_3_1.setBorderSize(0);
     flexButton5_3_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_3_1.setText(TypedText(T___SINGLEUSE_U74N));
-    flexButton5_3_1.setTextPosition(0, 10, 153, 45);
-    flexButton5_3_1.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_3_1.setPosition(462, 46, 153, 45);
+    flexButton5_3_1.setWildcardText(TypedText(T___SINGLEUSE_4X9M));
+    Unicode::snprintf(flexButton5_3_1Buffer, FLEXBUTTON5_3_1_SIZE, "%s", TypedText(T___SINGLEUSE_0FQ6).getText());
+    flexButton5_3_1.setWildcardTextBuffer(flexButton5_3_1Buffer);
+    flexButton5_3_1.setWildcardTextPosition(0, 10, 153, 45);
+    flexButton5_3_1.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flexButton5_3_1.setPosition(462, 0, 153, 45);
     container_table.add(flexButton5_3_1);
 
     flexButton5_1_1.setBoxWithBorderPosition(0, 0, 153, 45);
     flexButton5_1_1.setBorderSize(0);
     flexButton5_1_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_1_1.setText(TypedText(T___SINGLEUSE_7C9O));
-    flexButton5_1_1.setTextPosition(0, 10, 153, 45);
-    flexButton5_1_1.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_1_1.setPosition(154, 46, 153, 45);
+    flexButton5_1_1.setWildcardText(TypedText(T___SINGLEUSE_55BG));
+    Unicode::snprintf(flexButton5_1_1Buffer, FLEXBUTTON5_1_1_SIZE, "%s", TypedText(T___SINGLEUSE_SUVP).getText());
+    flexButton5_1_1.setWildcardTextBuffer(flexButton5_1_1Buffer);
+    flexButton5_1_1.setWildcardTextPosition(0, 10, 153, 45);
+    flexButton5_1_1.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flexButton5_1_1.setPosition(154, 0, 153, 45);
     container_table.add(flexButton5_1_1);
 
-    flexButton5_2_1_1.setBoxWithBorderPosition(0, 0, 153, 45);
-    flexButton5_2_1_1.setBorderSize(0);
-    flexButton5_2_1_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_2_1_1.setText(TypedText(T___SINGLEUSE_UGXB));
-    flexButton5_2_1_1.setTextPosition(0, 10, 153, 45);
-    flexButton5_2_1_1.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_2_1_1.setPosition(0, 92, 153, 45);
-    container_table.add(flexButton5_2_1_1);
+    flxbutt_tb_0_0.setBoxWithBorderPosition(0, 0, 153, 45);
+    flxbutt_tb_0_0.setBorderSize(0);
+    flxbutt_tb_0_0.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flxbutt_tb_0_0.setWildcardText(TypedText(T___SINGLEUSE_QT99));
+    Unicode::snprintf(flxbutt_tb_0_0Buffer, FLXBUTT_TB_0_0_SIZE, "%s", TypedText(T___SINGLEUSE_ZH4J).getText());
+    flxbutt_tb_0_0.setWildcardTextBuffer(flxbutt_tb_0_0Buffer);
+    flxbutt_tb_0_0.setWildcardTextPosition(0, 10, 153, 45);
+    flxbutt_tb_0_0.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flxbutt_tb_0_0.setPosition(0, 0, 153, 45);
+    container_table.add(flxbutt_tb_0_0);
 
-    flexButton5_4_1.setBoxWithBorderPosition(0, 0, 153, 45);
-    flexButton5_4_1.setBorderSize(0);
-    flexButton5_4_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_4_1.setText(TypedText(T___SINGLEUSE_HO4O));
-    flexButton5_4_1.setTextPosition(0, 10, 153, 45);
-    flexButton5_4_1.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_4_1.setPosition(308, 92, 153, 45);
-    container_table.add(flexButton5_4_1);
+    flxbutt_tb_0_2.setBoxWithBorderPosition(0, 0, 153, 45);
+    flxbutt_tb_0_2.setBorderSize(0);
+    flxbutt_tb_0_2.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flxbutt_tb_0_2.setWildcardText(TypedText(T___SINGLEUSE_V63P));
+    Unicode::snprintf(flxbutt_tb_0_2Buffer, FLXBUTT_TB_0_2_SIZE, "%s", TypedText(T___SINGLEUSE_DKCO).getText());
+    flxbutt_tb_0_2.setWildcardTextBuffer(flxbutt_tb_0_2Buffer);
+    flxbutt_tb_0_2.setWildcardTextPosition(0, 10, 153, 45);
+    flxbutt_tb_0_2.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flxbutt_tb_0_2.setPosition(308, 0, 153, 45);
+    container_table.add(flxbutt_tb_0_2);
 
-    flexButton5_3_1_1.setBoxWithBorderPosition(0, 0, 153, 45);
-    flexButton5_3_1_1.setBorderSize(0);
-    flexButton5_3_1_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_3_1_1.setText(TypedText(T___SINGLEUSE_IB3M));
-    flexButton5_3_1_1.setTextPosition(0, 10, 153, 45);
-    flexButton5_3_1_1.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_3_1_1.setPosition(462, 92, 153, 45);
-    container_table.add(flexButton5_3_1_1);
+    flxbutt_tb_0_3.setBoxWithBorderPosition(0, 0, 153, 45);
+    flxbutt_tb_0_3.setBorderSize(0);
+    flxbutt_tb_0_3.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flxbutt_tb_0_3.setWildcardText(TypedText(T___SINGLEUSE_TLVX));
+    Unicode::snprintf(flxbutt_tb_0_3Buffer, FLXBUTT_TB_0_3_SIZE, "%s", TypedText(T___SINGLEUSE_9S0U).getText());
+    flxbutt_tb_0_3.setWildcardTextBuffer(flxbutt_tb_0_3Buffer);
+    flxbutt_tb_0_3.setWildcardTextPosition(0, 10, 153, 45);
+    flxbutt_tb_0_3.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flxbutt_tb_0_3.setPosition(462, 0, 153, 45);
+    container_table.add(flxbutt_tb_0_3);
 
-    flexButton5_1_1_1.setBoxWithBorderPosition(0, 0, 153, 45);
-    flexButton5_1_1_1.setBorderSize(0);
-    flexButton5_1_1_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_1_1_1.setText(TypedText(T___SINGLEUSE_DPX0));
-    flexButton5_1_1_1.setTextPosition(0, 10, 153, 45);
-    flexButton5_1_1_1.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_1_1_1.setPosition(154, 92, 153, 45);
-    container_table.add(flexButton5_1_1_1);
+    flxbutt_tb_0_1.setBoxWithBorderPosition(0, 0, 153, 45);
+    flxbutt_tb_0_1.setBorderSize(0);
+    flxbutt_tb_0_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flxbutt_tb_0_1.setWildcardText(TypedText(T___SINGLEUSE_9YIX));
+    Unicode::snprintf(flxbutt_tb_0_1Buffer, FLXBUTT_TB_0_1_SIZE, "%s", TypedText(T___SINGLEUSE_BZCP).getText());
+    flxbutt_tb_0_1.setWildcardTextBuffer(flxbutt_tb_0_1Buffer);
+    flxbutt_tb_0_1.setWildcardTextPosition(0, 10, 153, 45);
+    flxbutt_tb_0_1.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flxbutt_tb_0_1.setPosition(154, 0, 153, 45);
+    container_table.add(flxbutt_tb_0_1);
 
-    flexButton5_2_1_1_1.setBoxWithBorderPosition(0, 0, 153, 45);
-    flexButton5_2_1_1_1.setBorderSize(0);
-    flexButton5_2_1_1_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_2_1_1_1.setText(TypedText(T___SINGLEUSE_B43F));
-    flexButton5_2_1_1_1.setTextPosition(0, 10, 153, 45);
-    flexButton5_2_1_1_1.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_2_1_1_1.setPosition(0, 92, 153, 45);
-    container_table.add(flexButton5_2_1_1_1);
+    flxbutt_tb_1_0.setBoxWithBorderPosition(0, 0, 153, 45);
+    flxbutt_tb_1_0.setBorderSize(0);
+    flxbutt_tb_1_0.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flxbutt_tb_1_0.setWildcardText(TypedText(T___SINGLEUSE_0ERG));
+    Unicode::snprintf(flxbutt_tb_1_0Buffer, FLXBUTT_TB_1_0_SIZE, "%s", TypedText(T___SINGLEUSE_SU4Z).getText());
+    flxbutt_tb_1_0.setWildcardTextBuffer(flxbutt_tb_1_0Buffer);
+    flxbutt_tb_1_0.setWildcardTextPosition(0, 10, 153, 45);
+    flxbutt_tb_1_0.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flxbutt_tb_1_0.setPosition(0, 46, 153, 45);
+    container_table.add(flxbutt_tb_1_0);
 
-    flexButton5_4_1_1.setBoxWithBorderPosition(0, 0, 153, 45);
-    flexButton5_4_1_1.setBorderSize(0);
-    flexButton5_4_1_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_4_1_1.setText(TypedText(T___SINGLEUSE_HKH1));
-    flexButton5_4_1_1.setTextPosition(0, 10, 153, 45);
-    flexButton5_4_1_1.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_4_1_1.setPosition(308, 92, 153, 45);
-    container_table.add(flexButton5_4_1_1);
+    flxbutt_tb_1_2.setBoxWithBorderPosition(0, 0, 153, 45);
+    flxbutt_tb_1_2.setBorderSize(0);
+    flxbutt_tb_1_2.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flxbutt_tb_1_2.setWildcardText(TypedText(T___SINGLEUSE_2FL7));
+    Unicode::snprintf(flxbutt_tb_1_2Buffer, FLXBUTT_TB_1_2_SIZE, "%s", TypedText(T___SINGLEUSE_6F0Y).getText());
+    flxbutt_tb_1_2.setWildcardTextBuffer(flxbutt_tb_1_2Buffer);
+    flxbutt_tb_1_2.setWildcardTextPosition(0, 10, 153, 45);
+    flxbutt_tb_1_2.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flxbutt_tb_1_2.setPosition(308, 46, 153, 45);
+    container_table.add(flxbutt_tb_1_2);
 
-    flexButton5_3_1_1_1.setBoxWithBorderPosition(0, 0, 153, 45);
-    flexButton5_3_1_1_1.setBorderSize(0);
-    flexButton5_3_1_1_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_3_1_1_1.setText(TypedText(T___SINGLEUSE_IHWM));
-    flexButton5_3_1_1_1.setTextPosition(0, 10, 153, 45);
-    flexButton5_3_1_1_1.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_3_1_1_1.setPosition(462, 92, 153, 45);
-    container_table.add(flexButton5_3_1_1_1);
+    flxbutt_tb_1_3.setBoxWithBorderPosition(0, 0, 153, 45);
+    flxbutt_tb_1_3.setBorderSize(0);
+    flxbutt_tb_1_3.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flxbutt_tb_1_3.setWildcardText(TypedText(T___SINGLEUSE_GCNC));
+    Unicode::snprintf(flxbutt_tb_1_3Buffer, FLXBUTT_TB_1_3_SIZE, "%s", TypedText(T___SINGLEUSE_8TDU).getText());
+    flxbutt_tb_1_3.setWildcardTextBuffer(flxbutt_tb_1_3Buffer);
+    flxbutt_tb_1_3.setWildcardTextPosition(0, 10, 153, 45);
+    flxbutt_tb_1_3.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flxbutt_tb_1_3.setPosition(462, 46, 153, 45);
+    container_table.add(flxbutt_tb_1_3);
 
-    flexButton5_1_1_1_1.setBoxWithBorderPosition(0, 0, 153, 45);
-    flexButton5_1_1_1_1.setBorderSize(0);
-    flexButton5_1_1_1_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_1_1_1_1.setText(TypedText(T___SINGLEUSE_NC11));
-    flexButton5_1_1_1_1.setTextPosition(0, 10, 153, 45);
-    flexButton5_1_1_1_1.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_1_1_1_1.setPosition(154, 92, 153, 45);
-    container_table.add(flexButton5_1_1_1_1);
+    flxbutt_tb_1_1.setBoxWithBorderPosition(0, 0, 153, 45);
+    flxbutt_tb_1_1.setBorderSize(0);
+    flxbutt_tb_1_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flxbutt_tb_1_1.setWildcardText(TypedText(T___SINGLEUSE_5XLQ));
+    Unicode::snprintf(flxbutt_tb_1_1Buffer, FLXBUTT_TB_1_1_SIZE, "%s", TypedText(T___SINGLEUSE_KT8G).getText());
+    flxbutt_tb_1_1.setWildcardTextBuffer(flxbutt_tb_1_1Buffer);
+    flxbutt_tb_1_1.setWildcardTextPosition(0, 10, 153, 45);
+    flxbutt_tb_1_1.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flxbutt_tb_1_1.setPosition(154, 46, 153, 45);
+    container_table.add(flxbutt_tb_1_1);
 
-    flexButton5_2_1_1_1_1.setBoxWithBorderPosition(0, 0, 153, 45);
-    flexButton5_2_1_1_1_1.setBorderSize(0);
-    flexButton5_2_1_1_1_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_2_1_1_1_1.setText(TypedText(T___SINGLEUSE_FLTS));
-    flexButton5_2_1_1_1_1.setTextPosition(0, 10, 153, 45);
-    flexButton5_2_1_1_1_1.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_2_1_1_1_1.setPosition(0, 138, 153, 45);
-    container_table.add(flexButton5_2_1_1_1_1);
+    flxbutt_tb_2_0.setBoxWithBorderPosition(0, 0, 153, 45);
+    flxbutt_tb_2_0.setBorderSize(0);
+    flxbutt_tb_2_0.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flxbutt_tb_2_0.setWildcardText(TypedText(T___SINGLEUSE_0Q1X));
+    Unicode::snprintf(flxbutt_tb_2_0Buffer, FLXBUTT_TB_2_0_SIZE, "%s", TypedText(T___SINGLEUSE_N6Y7).getText());
+    flxbutt_tb_2_0.setWildcardTextBuffer(flxbutt_tb_2_0Buffer);
+    flxbutt_tb_2_0.setWildcardTextPosition(0, 10, 153, 45);
+    flxbutt_tb_2_0.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flxbutt_tb_2_0.setPosition(0, 92, 153, 45);
+    container_table.add(flxbutt_tb_2_0);
 
-    flexButton5_4_1_1_1.setBoxWithBorderPosition(0, 0, 153, 45);
-    flexButton5_4_1_1_1.setBorderSize(0);
-    flexButton5_4_1_1_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_4_1_1_1.setText(TypedText(T___SINGLEUSE_V3Y8));
-    flexButton5_4_1_1_1.setTextPosition(0, 10, 153, 45);
-    flexButton5_4_1_1_1.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_4_1_1_1.setPosition(308, 138, 153, 45);
-    container_table.add(flexButton5_4_1_1_1);
+    flxbutt_tb_2_2.setBoxWithBorderPosition(0, 0, 153, 45);
+    flxbutt_tb_2_2.setBorderSize(0);
+    flxbutt_tb_2_2.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flxbutt_tb_2_2.setWildcardText(TypedText(T___SINGLEUSE_ZHXK));
+    Unicode::snprintf(flxbutt_tb_2_2Buffer, FLXBUTT_TB_2_2_SIZE, "%s", TypedText(T___SINGLEUSE_O51M).getText());
+    flxbutt_tb_2_2.setWildcardTextBuffer(flxbutt_tb_2_2Buffer);
+    flxbutt_tb_2_2.setWildcardTextPosition(0, 10, 153, 45);
+    flxbutt_tb_2_2.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flxbutt_tb_2_2.setPosition(308, 92, 153, 45);
+    container_table.add(flxbutt_tb_2_2);
 
-    flexButton5_3_1_1_1_1.setBoxWithBorderPosition(0, 0, 153, 45);
-    flexButton5_3_1_1_1_1.setBorderSize(0);
-    flexButton5_3_1_1_1_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_3_1_1_1_1.setText(TypedText(T___SINGLEUSE_3D0Z));
-    flexButton5_3_1_1_1_1.setTextPosition(0, 10, 153, 45);
-    flexButton5_3_1_1_1_1.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_3_1_1_1_1.setPosition(462, 138, 153, 45);
-    container_table.add(flexButton5_3_1_1_1_1);
+    flxbutt_tb_2_3.setBoxWithBorderPosition(0, 0, 153, 45);
+    flxbutt_tb_2_3.setBorderSize(0);
+    flxbutt_tb_2_3.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flxbutt_tb_2_3.setWildcardText(TypedText(T___SINGLEUSE_8Y8N));
+    Unicode::snprintf(flxbutt_tb_2_3Buffer, FLXBUTT_TB_2_3_SIZE, "%s", TypedText(T___SINGLEUSE_UQR9).getText());
+    flxbutt_tb_2_3.setWildcardTextBuffer(flxbutt_tb_2_3Buffer);
+    flxbutt_tb_2_3.setWildcardTextPosition(0, 10, 153, 45);
+    flxbutt_tb_2_3.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flxbutt_tb_2_3.setPosition(462, 92, 153, 45);
+    container_table.add(flxbutt_tb_2_3);
 
-    flexButton5_1_1_1_1_1.setBoxWithBorderPosition(0, 0, 153, 45);
-    flexButton5_1_1_1_1_1.setBorderSize(0);
-    flexButton5_1_1_1_1_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_1_1_1_1_1.setText(TypedText(T___SINGLEUSE_JUBG));
-    flexButton5_1_1_1_1_1.setTextPosition(0, 10, 153, 45);
-    flexButton5_1_1_1_1_1.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_1_1_1_1_1.setPosition(154, 138, 153, 45);
-    container_table.add(flexButton5_1_1_1_1_1);
+    flxbutt_tb_2_1.setBoxWithBorderPosition(0, 0, 153, 45);
+    flxbutt_tb_2_1.setBorderSize(0);
+    flxbutt_tb_2_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flxbutt_tb_2_1.setWildcardText(TypedText(T___SINGLEUSE_I7D2));
+    Unicode::snprintf(flxbutt_tb_2_1Buffer, FLXBUTT_TB_2_1_SIZE, "%s", TypedText(T___SINGLEUSE_FRKK).getText());
+    flxbutt_tb_2_1.setWildcardTextBuffer(flxbutt_tb_2_1Buffer);
+    flxbutt_tb_2_1.setWildcardTextPosition(0, 10, 153, 45);
+    flxbutt_tb_2_1.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flxbutt_tb_2_1.setPosition(154, 92, 153, 45);
+    container_table.add(flxbutt_tb_2_1);
 
-    flexButton5_2_1_1_1_1_2.setBoxWithBorderPosition(0, 0, 153, 45);
-    flexButton5_2_1_1_1_1_2.setBorderSize(0);
-    flexButton5_2_1_1_1_1_2.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_2_1_1_1_1_2.setText(TypedText(T___SINGLEUSE_84XV));
-    flexButton5_2_1_1_1_1_2.setTextPosition(0, 10, 153, 45);
-    flexButton5_2_1_1_1_1_2.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_2_1_1_1_1_2.setPosition(0, 184, 153, 45);
-    container_table.add(flexButton5_2_1_1_1_1_2);
+    flxbutt_tb_3_0.setBoxWithBorderPosition(0, 0, 153, 45);
+    flxbutt_tb_3_0.setBorderSize(0);
+    flxbutt_tb_3_0.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flxbutt_tb_3_0.setWildcardText(TypedText(T___SINGLEUSE_FZV3));
+    Unicode::snprintf(flxbutt_tb_3_0Buffer, FLXBUTT_TB_3_0_SIZE, "%s", TypedText(T___SINGLEUSE_OG2J).getText());
+    flxbutt_tb_3_0.setWildcardTextBuffer(flxbutt_tb_3_0Buffer);
+    flxbutt_tb_3_0.setWildcardTextPosition(0, 10, 153, 45);
+    flxbutt_tb_3_0.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flxbutt_tb_3_0.setPosition(0, 138, 153, 45);
+    container_table.add(flxbutt_tb_3_0);
 
-    flexButton5_4_1_1_1_2.setBoxWithBorderPosition(0, 0, 153, 45);
-    flexButton5_4_1_1_1_2.setBorderSize(0);
-    flexButton5_4_1_1_1_2.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_4_1_1_1_2.setText(TypedText(T___SINGLEUSE_16P5));
-    flexButton5_4_1_1_1_2.setTextPosition(0, 10, 153, 45);
-    flexButton5_4_1_1_1_2.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_4_1_1_1_2.setPosition(308, 184, 153, 45);
-    container_table.add(flexButton5_4_1_1_1_2);
+    flxbutt_tb_3_2.setBoxWithBorderPosition(0, 0, 153, 45);
+    flxbutt_tb_3_2.setBorderSize(0);
+    flxbutt_tb_3_2.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flxbutt_tb_3_2.setWildcardText(TypedText(T___SINGLEUSE_WOPH));
+    Unicode::snprintf(flxbutt_tb_3_2Buffer, FLXBUTT_TB_3_2_SIZE, "%s", TypedText(T___SINGLEUSE_1CQF).getText());
+    flxbutt_tb_3_2.setWildcardTextBuffer(flxbutt_tb_3_2Buffer);
+    flxbutt_tb_3_2.setWildcardTextPosition(0, 10, 153, 45);
+    flxbutt_tb_3_2.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flxbutt_tb_3_2.setPosition(308, 138, 153, 45);
+    container_table.add(flxbutt_tb_3_2);
 
-    flexButton5_3_1_1_1_1_2.setBoxWithBorderPosition(0, 0, 153, 45);
-    flexButton5_3_1_1_1_1_2.setBorderSize(0);
-    flexButton5_3_1_1_1_1_2.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_3_1_1_1_1_2.setText(TypedText(T___SINGLEUSE_SITB));
-    flexButton5_3_1_1_1_1_2.setTextPosition(0, 10, 153, 45);
-    flexButton5_3_1_1_1_1_2.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_3_1_1_1_1_2.setPosition(462, 184, 153, 45);
-    container_table.add(flexButton5_3_1_1_1_1_2);
+    flxbutt_tb_3_3.setBoxWithBorderPosition(0, 0, 153, 45);
+    flxbutt_tb_3_3.setBorderSize(0);
+    flxbutt_tb_3_3.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flxbutt_tb_3_3.setWildcardText(TypedText(T___SINGLEUSE_9OWI));
+    Unicode::snprintf(flxbutt_tb_3_3Buffer, FLXBUTT_TB_3_3_SIZE, "%s", TypedText(T___SINGLEUSE_5KEG).getText());
+    flxbutt_tb_3_3.setWildcardTextBuffer(flxbutt_tb_3_3Buffer);
+    flxbutt_tb_3_3.setWildcardTextPosition(0, 10, 153, 45);
+    flxbutt_tb_3_3.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flxbutt_tb_3_3.setPosition(462, 138, 153, 45);
+    container_table.add(flxbutt_tb_3_3);
 
-    flexButton5_1_1_1_1_1_2.setBoxWithBorderPosition(0, 0, 153, 45);
-    flexButton5_1_1_1_1_1_2.setBorderSize(0);
-    flexButton5_1_1_1_1_1_2.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_1_1_1_1_1_2.setText(TypedText(T___SINGLEUSE_E5HB));
-    flexButton5_1_1_1_1_1_2.setTextPosition(0, 10, 153, 45);
-    flexButton5_1_1_1_1_1_2.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    flexButton5_1_1_1_1_1_2.setPosition(154, 184, 153, 45);
-    container_table.add(flexButton5_1_1_1_1_1_2);
+    flxbutt_tb_3_1.setBoxWithBorderPosition(0, 0, 153, 45);
+    flxbutt_tb_3_1.setBorderSize(0);
+    flxbutt_tb_3_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flxbutt_tb_3_1.setWildcardText(TypedText(T___SINGLEUSE_QPUO));
+    Unicode::snprintf(flxbutt_tb_3_1Buffer, FLXBUTT_TB_3_1_SIZE, "%s", TypedText(T___SINGLEUSE_YAPT).getText());
+    flxbutt_tb_3_1.setWildcardTextBuffer(flxbutt_tb_3_1Buffer);
+    flxbutt_tb_3_1.setWildcardTextPosition(0, 10, 153, 45);
+    flxbutt_tb_3_1.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flxbutt_tb_3_1.setPosition(154, 138, 153, 45);
+    container_table.add(flxbutt_tb_3_1);
+
+    flxbutt_tb_4_0.setBoxWithBorderPosition(0, 0, 153, 45);
+    flxbutt_tb_4_0.setBorderSize(0);
+    flxbutt_tb_4_0.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flxbutt_tb_4_0.setWildcardText(TypedText(T___SINGLEUSE_EYOJ));
+    Unicode::snprintf(flxbutt_tb_4_0Buffer, FLXBUTT_TB_4_0_SIZE, "%s", TypedText(T___SINGLEUSE_7686).getText());
+    flxbutt_tb_4_0.setWildcardTextBuffer(flxbutt_tb_4_0Buffer);
+    flxbutt_tb_4_0.setWildcardTextPosition(0, 10, 153, 45);
+    flxbutt_tb_4_0.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flxbutt_tb_4_0.setPosition(0, 184, 153, 45);
+    container_table.add(flxbutt_tb_4_0);
+
+    flxbutt_tb_4_2.setBoxWithBorderPosition(0, 0, 153, 45);
+    flxbutt_tb_4_2.setBorderSize(0);
+    flxbutt_tb_4_2.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flxbutt_tb_4_2.setWildcardText(TypedText(T___SINGLEUSE_8SHV));
+    Unicode::snprintf(flxbutt_tb_4_2Buffer, FLXBUTT_TB_4_2_SIZE, "%s", TypedText(T___SINGLEUSE_BJW4).getText());
+    flxbutt_tb_4_2.setWildcardTextBuffer(flxbutt_tb_4_2Buffer);
+    flxbutt_tb_4_2.setWildcardTextPosition(0, 10, 153, 45);
+    flxbutt_tb_4_2.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flxbutt_tb_4_2.setPosition(308, 184, 153, 45);
+    container_table.add(flxbutt_tb_4_2);
+
+    flxbutt_tb_4_3.setBoxWithBorderPosition(0, 0, 153, 45);
+    flxbutt_tb_4_3.setBorderSize(0);
+    flxbutt_tb_4_3.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flxbutt_tb_4_3.setWildcardText(TypedText(T___SINGLEUSE_05UP));
+    Unicode::snprintf(flxbutt_tb_4_3Buffer, FLXBUTT_TB_4_3_SIZE, "%s", TypedText(T___SINGLEUSE_7ESH).getText());
+    flxbutt_tb_4_3.setWildcardTextBuffer(flxbutt_tb_4_3Buffer);
+    flxbutt_tb_4_3.setWildcardTextPosition(0, 10, 153, 45);
+    flxbutt_tb_4_3.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flxbutt_tb_4_3.setPosition(462, 184, 153, 45);
+    container_table.add(flxbutt_tb_4_3);
+
+    flxbutt_tb_4_1.setBoxWithBorderPosition(0, 0, 153, 45);
+    flxbutt_tb_4_1.setBorderSize(0);
+    flxbutt_tb_4_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flxbutt_tb_4_1.setWildcardText(TypedText(T___SINGLEUSE_JFL3));
+    Unicode::snprintf(flxbutt_tb_4_1Buffer, FLXBUTT_TB_4_1_SIZE, "%s", TypedText(T___SINGLEUSE_5VND).getText());
+    flxbutt_tb_4_1.setWildcardTextBuffer(flxbutt_tb_4_1Buffer);
+    flxbutt_tb_4_1.setWildcardTextPosition(0, 10, 153, 45);
+    flxbutt_tb_4_1.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    flxbutt_tb_4_1.setPosition(154, 184, 153, 45);
+    container_table.add(flxbutt_tb_4_1);
 
     add(container_table);
 }
@@ -557,6 +569,6 @@ void screenViewBase::handleTickEvent()
 {
     //Interaction1
     //When every N tick call virtual function
-    //Call function1
-    function1();
+    //Call gfxTickCallback
+    gfxTickCallback();
 }

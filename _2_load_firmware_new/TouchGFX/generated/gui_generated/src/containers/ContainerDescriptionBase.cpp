@@ -73,7 +73,7 @@ ContainerDescriptionBase::ContainerDescriptionBase()
     add(desr_vswr_text);
 
     desr_online_state.setBoxWithBorderPosition(0, 0, 150, 50);
-    desr_online_state.setBorderSize(2);
+    desr_online_state.setBorderSize(0);
     desr_online_state.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(51, 102, 153));
     desr_online_state.setText(TypedText(T___SINGLEUSE_379Q));
     desr_online_state.setTextPosition(0, 12, 150, 50);
@@ -82,7 +82,7 @@ ContainerDescriptionBase::ContainerDescriptionBase()
     add(desr_online_state);
 
     desr_fault_state.setBoxWithBorderPosition(0, 0, 150, 50);
-    desr_fault_state.setBorderSize(2);
+    desr_fault_state.setBorderSize(0);
     desr_fault_state.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(255, 255, 255));
     desr_fault_state.setText(TypedText(T___SINGLEUSE_C2JX));
     desr_fault_state.setTextPosition(0, 12, 150, 50);
@@ -91,7 +91,7 @@ ContainerDescriptionBase::ContainerDescriptionBase()
     add(desr_fault_state);
 
     desr_fwd_value.setBoxWithBorderPosition(0, 0, 150, 50);
-    desr_fwd_value.setBorderSize(2);
+    desr_fwd_value.setBorderSize(0);
     desr_fwd_value.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(51, 102, 153));
     desr_fwd_value.setText(TypedText(T___SINGLEUSE_QPWY));
     desr_fwd_value.setTextPosition(0, 12, 150, 50);
@@ -100,7 +100,7 @@ ContainerDescriptionBase::ContainerDescriptionBase()
     add(desr_fwd_value);
 
     desr_rfl_value.setBoxWithBorderPosition(0, 0, 150, 50);
-    desr_rfl_value.setBorderSize(2);
+    desr_rfl_value.setBorderSize(0);
     desr_rfl_value.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(51, 102, 153));
     desr_rfl_value.setText(TypedText(T___SINGLEUSE_6M4L));
     desr_rfl_value.setTextPosition(0, 12, 150, 50);
@@ -109,7 +109,7 @@ ContainerDescriptionBase::ContainerDescriptionBase()
     add(desr_rfl_value);
 
     desr_vswr_value.setBoxWithBorderPosition(0, 0, 150, 50);
-    desr_vswr_value.setBorderSize(2);
+    desr_vswr_value.setBorderSize(0);
     desr_vswr_value.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(51, 102, 153));
     desr_vswr_value.setText(TypedText(T___SINGLEUSE_GITU));
     desr_vswr_value.setTextPosition(0, 12, 150, 50);

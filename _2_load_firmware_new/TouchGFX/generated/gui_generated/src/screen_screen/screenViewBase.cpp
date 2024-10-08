@@ -44,24 +44,6 @@ screenViewBase::screenViewBase()
     desr_rfl_unit.setPosition(562, 132, 65, 50);
     container_descr.add(desr_rfl_unit);
 
-    desr_rfl_value.setBoxWithBorderPosition(0, 0, 150, 50);
-    desr_rfl_value.setBorderSize(2);
-    desr_rfl_value.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    desr_rfl_value.setText(TypedText(T___SINGLEUSE_BIE1));
-    desr_rfl_value.setTextPosition(0, 12, 150, 50);
-    desr_rfl_value.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    desr_rfl_value.setPosition(409, 132, 150, 50);
-    container_descr.add(desr_rfl_value);
-
-    desr_vswr_value.setBoxWithBorderPosition(0, 0, 150, 50);
-    desr_vswr_value.setBorderSize(2);
-    desr_vswr_value.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    desr_vswr_value.setText(TypedText(T___SINGLEUSE_0YSM));
-    desr_vswr_value.setTextPosition(0, 12, 150, 50);
-    desr_vswr_value.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    desr_vswr_value.setPosition(640, 132, 150, 50);
-    container_descr.add(desr_vswr_value);
-
     desr_line3.setPosition(690, 56, 100, 4);
     desr_line3Painter.setColor(touchgfx::Color::getColorFromRGB(70, 255, 255));
     desr_line3.setPainter(desr_line3Painter);
@@ -116,24 +98,6 @@ screenViewBase::screenViewBase()
     desr_vswr_text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_QJTA));
     container_descr.add(desr_vswr_text);
 
-    desr_online_state.setBoxWithBorderPosition(0, 0, 150, 50);
-    desr_online_state.setBorderSize(2);
-    desr_online_state.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    desr_online_state.setText(TypedText(T___SINGLEUSE_VRBV));
-    desr_online_state.setTextPosition(0, 12, 150, 50);
-    desr_online_state.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    desr_online_state.setPosition(10, 12, 150, 50);
-    container_descr.add(desr_online_state);
-
-    desr_fault_state.setBoxWithBorderPosition(0, 0, 150, 50);
-    desr_fault_state.setBorderSize(2);
-    desr_fault_state.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(255, 255, 255));
-    desr_fault_state.setText(TypedText(T___SINGLEUSE_E7X4));
-    desr_fault_state.setTextPosition(0, 12, 150, 50);
-    desr_fault_state.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
-    desr_fault_state.setPosition(10, 72, 150, 50);
-    container_descr.add(desr_fault_state);
-
     desr_online_pusher.setBoxWithBorderPosition(0, 0, 150, 50);
     desr_online_pusher.setBorderSize(2);
     desr_online_pusher.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(143, 143, 143), touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -152,18 +116,55 @@ screenViewBase::screenViewBase()
     desr_fwd_unit.setPosition(326, 132, 65, 50);
     container_descr.add(desr_fwd_unit);
 
+    desr_online_state.setBoxWithBorderPosition(0, 0, 150, 50);
+    desr_online_state.setBorderSize(0);
+    desr_online_state.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    desr_online_state.setText(TypedText(T___SINGLEUSE_0KMS));
+    desr_online_state.setTextPosition(0, 12, 150, 50);
+    desr_online_state.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    desr_online_state.setPosition(10, 12, 150, 50);
+    container_descr.add(desr_online_state);
+
+    desr_fault_state.setBoxWithBorderPosition(0, 0, 150, 50);
+    desr_fault_state.setBorderSize(0);
+    desr_fault_state.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(255, 255, 255));
+    desr_fault_state.setText(TypedText(T___SINGLEUSE_JS0S));
+    desr_fault_state.setTextPosition(0, 12, 150, 50);
+    desr_fault_state.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    desr_fault_state.setPosition(10, 72, 150, 50);
+    container_descr.add(desr_fault_state);
+
     desr_fwd_value.setBoxWithBorderPosition(0, 0, 150, 50);
-    desr_fwd_value.setBorderSize(2);
+    desr_fwd_value.setBorderSize(0);
     desr_fwd_value.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    desr_fwd_value.setText(TypedText(T___SINGLEUSE_35R2));
+    desr_fwd_value.setText(TypedText(T___SINGLEUSE_8HVU));
     desr_fwd_value.setTextPosition(0, 12, 150, 50);
     desr_fwd_value.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
     desr_fwd_value.setPosition(174, 132, 150, 50);
     container_descr.add(desr_fwd_value);
 
+    desr_rfl_value.setBoxWithBorderPosition(0, 0, 150, 50);
+    desr_rfl_value.setBorderSize(0);
+    desr_rfl_value.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    desr_rfl_value.setText(TypedText(T___SINGLEUSE_HG57));
+    desr_rfl_value.setTextPosition(0, 12, 150, 50);
+    desr_rfl_value.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    desr_rfl_value.setPosition(409, 132, 150, 50);
+    container_descr.add(desr_rfl_value);
+
+    desr_vswr_value.setBoxWithBorderPosition(0, 0, 150, 50);
+    desr_vswr_value.setBorderSize(0);
+    desr_vswr_value.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(70, 255, 255), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    desr_vswr_value.setText(TypedText(T___SINGLEUSE_GKSJ));
+    desr_vswr_value.setTextPosition(0, 12, 150, 50);
+    desr_vswr_value.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    desr_vswr_value.setPosition(640, 132, 150, 50);
+    container_descr.add(desr_vswr_value);
+
     add(container_descr);
 
     container_alc.setPosition(175, 240, 615, 230);
+    container_alc.setVisible(false);
     alc_name.setBoxWithBorderPosition(0, 0, 302, 41);
     alc_name.setBorderSize(0);
     alc_name.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
@@ -528,6 +529,109 @@ screenViewBase::screenViewBase()
     container_table.add(table_cell_4_3);
 
     add(container_table);
+
+    container_comm.setPosition(175, 240, 615, 230);
+    table_cell_0_0_1.setBoxWithBorderPosition(0, 0, 302, 45);
+    table_cell_0_0_1.setBorderSize(0);
+    table_cell_0_0_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    table_cell_0_0_1.setText(TypedText(T___SINGLEUSE_VFN2));
+    table_cell_0_0_1.setTextPosition(0, 10, 302, 45);
+    table_cell_0_0_1.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    table_cell_0_0_1.setPosition(0, 0, 302, 45);
+    container_comm.add(table_cell_0_0_1);
+
+    table_cell_0_2_1.setBoxWithBorderPosition(0, 0, 302, 45);
+    table_cell_0_2_1.setBorderSize(2);
+    table_cell_0_2_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(143, 143, 143), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    table_cell_0_2_1.setWildcardText(TypedText(T___SINGLEUSE_S1S5));
+    Unicode::snprintf(table_cell_0_2_1Buffer, TABLE_CELL_0_2_1_SIZE, "%s", TypedText(T___SINGLEUSE_J7S2).getText());
+    table_cell_0_2_1.setWildcardTextBuffer(table_cell_0_2_1Buffer);
+    table_cell_0_2_1.setWildcardTextPosition(0, 10, 302, 45);
+    table_cell_0_2_1.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    table_cell_0_2_1.setPosition(313, 0, 302, 45);
+    container_comm.add(table_cell_0_2_1);
+
+    table_cell_1_0_1.setBoxWithBorderPosition(0, 0, 302, 45);
+    table_cell_1_0_1.setBorderSize(0);
+    table_cell_1_0_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    table_cell_1_0_1.setText(TypedText(T___SINGLEUSE_QT8Q));
+    table_cell_1_0_1.setTextPosition(0, 10, 302, 45);
+    table_cell_1_0_1.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    table_cell_1_0_1.setPosition(0, 46, 302, 45);
+    container_comm.add(table_cell_1_0_1);
+
+    table_cell_1_2_1.setBoxWithBorderPosition(0, 0, 302, 45);
+    table_cell_1_2_1.setBorderSize(2);
+    table_cell_1_2_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(143, 143, 143), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    table_cell_1_2_1.setWildcardText(TypedText(T___SINGLEUSE_XHV6));
+    Unicode::snprintf(table_cell_1_2_1Buffer, TABLE_CELL_1_2_1_SIZE, "%s", TypedText(T___SINGLEUSE_D3RU).getText());
+    table_cell_1_2_1.setWildcardTextBuffer(table_cell_1_2_1Buffer);
+    table_cell_1_2_1.setWildcardTextPosition(0, 10, 302, 45);
+    table_cell_1_2_1.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    table_cell_1_2_1.setPosition(313, 46, 302, 45);
+    container_comm.add(table_cell_1_2_1);
+
+    table_cell_2_0_1.setBoxWithBorderPosition(0, 0, 302, 45);
+    table_cell_2_0_1.setBorderSize(0);
+    table_cell_2_0_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    table_cell_2_0_1.setText(TypedText(T___SINGLEUSE_54QR));
+    table_cell_2_0_1.setTextPosition(0, 10, 302, 45);
+    table_cell_2_0_1.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    table_cell_2_0_1.setPosition(0, 92, 302, 45);
+    container_comm.add(table_cell_2_0_1);
+
+    table_cell_2_2_1.setBoxWithBorderPosition(0, 0, 302, 45);
+    table_cell_2_2_1.setBorderSize(2);
+    table_cell_2_2_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(143, 143, 143), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    table_cell_2_2_1.setWildcardText(TypedText(T___SINGLEUSE_E6CE));
+    Unicode::snprintf(table_cell_2_2_1Buffer, TABLE_CELL_2_2_1_SIZE, "%s", TypedText(T___SINGLEUSE_31AG).getText());
+    table_cell_2_2_1.setWildcardTextBuffer(table_cell_2_2_1Buffer);
+    table_cell_2_2_1.setWildcardTextPosition(0, 10, 302, 45);
+    table_cell_2_2_1.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    table_cell_2_2_1.setPosition(313, 92, 302, 45);
+    container_comm.add(table_cell_2_2_1);
+
+    table_cell_3_0_1.setBoxWithBorderPosition(0, 0, 302, 45);
+    table_cell_3_0_1.setBorderSize(0);
+    table_cell_3_0_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    table_cell_3_0_1.setText(TypedText(T___SINGLEUSE_T6LG));
+    table_cell_3_0_1.setTextPosition(0, 10, 302, 45);
+    table_cell_3_0_1.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    table_cell_3_0_1.setPosition(0, 138, 302, 45);
+    container_comm.add(table_cell_3_0_1);
+
+    table_cell_3_2_1.setBoxWithBorderPosition(0, 0, 302, 45);
+    table_cell_3_2_1.setBorderSize(2);
+    table_cell_3_2_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(143, 143, 143), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    table_cell_3_2_1.setWildcardText(TypedText(T___SINGLEUSE_DDJ7));
+    Unicode::snprintf(table_cell_3_2_1Buffer, TABLE_CELL_3_2_1_SIZE, "%s", TypedText(T___SINGLEUSE_1FQF).getText());
+    table_cell_3_2_1.setWildcardTextBuffer(table_cell_3_2_1Buffer);
+    table_cell_3_2_1.setWildcardTextPosition(0, 10, 302, 45);
+    table_cell_3_2_1.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    table_cell_3_2_1.setPosition(313, 138, 302, 45);
+    container_comm.add(table_cell_3_2_1);
+
+    table_cell_4_0_1.setBoxWithBorderPosition(0, 0, 302, 45);
+    table_cell_4_0_1.setBorderSize(0);
+    table_cell_4_0_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    table_cell_4_0_1.setText(TypedText(T___SINGLEUSE_3XYM));
+    table_cell_4_0_1.setTextPosition(0, 10, 302, 45);
+    table_cell_4_0_1.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    table_cell_4_0_1.setPosition(0, 184, 302, 45);
+    container_comm.add(table_cell_4_0_1);
+
+    table_cell_4_2_1.setBoxWithBorderPosition(0, 0, 302, 45);
+    table_cell_4_2_1.setBorderSize(2);
+    table_cell_4_2_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(143, 143, 143), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    table_cell_4_2_1.setWildcardText(TypedText(T___SINGLEUSE_KXD4));
+    Unicode::snprintf(table_cell_4_2_1Buffer, TABLE_CELL_4_2_1_SIZE, "%s", TypedText(T___SINGLEUSE_JOH3).getText());
+    table_cell_4_2_1.setWildcardTextBuffer(table_cell_4_2_1Buffer);
+    table_cell_4_2_1.setWildcardTextPosition(0, 10, 302, 45);
+    table_cell_4_2_1.setWildcardTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    table_cell_4_2_1.setPosition(313, 184, 302, 45);
+    container_comm.add(table_cell_4_2_1);
+
+    add(container_comm);
 
     container_menu.setPosition(10, 240, 150, 229);
     menu_table_sel.setBoxWithBorderPosition(0, 0, 150, 50);

@@ -1,5 +1,6 @@
 #include <gui/screen_screen/screenView.hpp>
 
+
 screenView::screenView()
 {
     ap_touchgfx_inst.init();
@@ -15,17 +16,75 @@ void screenView::tearDownScreen()
     screenViewBase::tearDownScreen();
 }
 
-int a = 0;
-int count = 0;
-int max_count = 1;
-int catched = 0;
-
 void screenView::gfxTickCallback()
 {
+    containerTest();
+    wildcardTest();
+}
+
+void screenView::containerTest(void)
+{
+    static int visible_count = 0;
+    const int visible_count_max = 50;
+    static int table_visible_state = 0;
+    /*
+     *@brief: container change test
+     */
+    visible_count += 1;
+    if(visible_count > visible_count_max)
+    {
+        visible_count %= visible_count_max;
+
+        if(table_visible_state == 0)
+        {
+            // table 0
+            table_visible_state = 1;
+
+            container_table.setVisible(true);
+            container_alc.setVisible(false);
+            container_comm.setVisible(false);
+            container_table.invalidate();
+            container_alc.invalidate();
+            container_comm.invalidate();
+        }
+        else if(table_visible_state == 1)
+        {
+            // table ALC
+            table_visible_state = 2;
+            container_table.setVisible(false);
+            container_alc.setVisible(true);
+            container_comm.setVisible(false);
+            container_table.invalidate();
+            container_alc.invalidate();
+            container_comm.invalidate();
+        }
+        else
+        {
+            // table COMM
+            table_visible_state = 0;
+            container_table.setVisible(false);
+            container_alc.setVisible(false);
+            container_comm.setVisible(true);
+            container_table.invalidate();
+            container_alc.invalidate();
+            container_comm.invalidate();
+        }
+    }
+}
+
+void screenView::wildcardTest(void)
+{
+    /*
+     *@brief: wild card test
+     */
+
+    static int a = 0;
+    static int count = 0;
+    const int max_count = 1;
+    static int catched = 0;
     if(count > max_count)
     {
         ap_touchgfx_inst.loop();
-        // container_table.isVisible()
         count %= max_count;
         if(a == 0)
         {

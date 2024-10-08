@@ -16,6 +16,9 @@ public:
 protected:
 private:
     ApTouchGfx ap_touchgfx_inst;
+
+    virtual void containerTest(void);
+    virtual void wildcardTest(void);
 };
 
 #endif // SCREENVIEW_HPP

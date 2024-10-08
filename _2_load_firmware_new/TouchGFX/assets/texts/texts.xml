@@ -6,8 +6,113 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_8HVU" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">New Text</Translation>
+      </Text>
+      <Text Id="__SingleUse_HG57" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">New Text</Translation>
+      </Text>
+      <Text Id="__SingleUse_GKSJ" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">New Text</Translation>
+      </Text>
+      <Text Id="__SingleUse_0KMS" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">New Text</Translation>
+      </Text>
+      <Text Id="__SingleUse_JS0S" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">New Text</Translation>
+      </Text>
+      <Text Id="__SingleUse_VFN2" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">IP ADDRESS</Translation>
+      </Text>
+      <Text Id="__SingleUse_J7S2" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">220.89.108.100</Translation>
+      </Text>
+      <Text Id="__SingleUse_S1S5" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_QT8Q" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">NET MASK</Translation>
+      </Text>
+      <Text Id="__SingleUse_D3RU" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">255.255.255.0</Translation>
+      </Text>
+      <Text Id="__SingleUse_XHV6" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_54QR" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">GATEWAY</Translation>
+      </Text>
+      <Text Id="__SingleUse_31AG" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">220.89.108.1</Translation>
+      </Text>
+      <Text Id="__SingleUse_E6CE" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_T6LG" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">PORT</Translation>
+      </Text>
+      <Text Id="__SingleUse_1FQF" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">1000</Translation>
+      </Text>
+      <Text Id="__SingleUse_DDJ7" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_3XYM" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">FREQUENCY</Translation>
+      </Text>
+      <Text Id="__SingleUse_JOH3" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">1 GHz</Translation>
+      </Text>
+      <Text Id="__SingleUse_KXD4" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_7CG9" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">1 GHz</Translation>
+      </Text>
+      <Text Id="__SingleUse_U2F0" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_SRQV" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">FREQUENCY</Translation>
+      </Text>
+      <Text Id="__SingleUse_749X" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">1000</Translation>
+      </Text>
+      <Text Id="__SingleUse_35OG" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_R0FM" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">PORT</Translation>
+      </Text>
+      <Text Id="__SingleUse_R0CH" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">220.89.108.1</Translation>
+      </Text>
+      <Text Id="__SingleUse_3B6X" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_K8HC" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">GATEWAY</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZO4L" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">255.255.255.0</Translation>
+      </Text>
+      <Text Id="__SingleUse_SFJT" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_3379" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">NET MASK</Translation>
+      </Text>
+      <Text Id="__SingleUse_IR5E" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">220.89.108.100</Translation>
+      </Text>
+      <Text Id="__SingleUse_HUT4" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_KTWU" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">IP ADDRESS</Translation>
+      </Text>
       <Text Id="__SingleUse_Q0QJ" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">TABLE 0</Translation>
+        <Translation Language="GB">HOME</Translation>
       </Text>
       <Text Id="__SingleUse_LXWQ" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">&lt;value&gt;</Translation>
@@ -337,7 +442,7 @@
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_RKLO" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">TABLE 0</Translation>
+        <Translation Language="GB">HOME</Translation>
       </Text>
       <Text Id="__SingleUse_7OUA" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">&lt;value&gt;</Translation>
@@ -375,29 +480,14 @@
       <Text Id="__SingleUse_QJTA" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">VSWR</Translation>
       </Text>
-      <Text Id="__SingleUse_VRBV" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">New Text</Translation>
-      </Text>
-      <Text Id="__SingleUse_E7X4" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">New Text</Translation>
-      </Text>
       <Text Id="__SingleUse_CLT2" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">New Text</Translation>
       </Text>
       <Text Id="__SingleUse_SPN9" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">dBm</Translation>
       </Text>
-      <Text Id="__SingleUse_35R2" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">New Text</Translation>
-      </Text>
       <Text Id="__SingleUse_T38D" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">dBm</Translation>
-      </Text>
-      <Text Id="__SingleUse_BIE1" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">New Text</Translation>
-      </Text>
-      <Text Id="__SingleUse_0YSM" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">New Text</Translation>
       </Text>
       <Text Id="__SingleUse_4FOU" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">New Text</Translation>

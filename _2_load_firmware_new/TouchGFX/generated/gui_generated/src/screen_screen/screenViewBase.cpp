@@ -5,8 +5,10 @@
 #include <touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp>
 #include <touchgfx/Color.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
+#include <images/BitmapDatabase.hpp>
 
-screenViewBase::screenViewBase()
+screenViewBase::screenViewBase() :
+    flexButtonCallback(this, &screenViewBase::flexButtonCallbackHandler)
 {
     touchgfx::CanvasWidgetRenderer::setupBuffer(canvasBuffer, CANVAS_BUFFER_SIZE);
     
@@ -15,6 +17,7 @@ screenViewBase::screenViewBase()
     add(__background);
 
     container_frame.setPosition(0, 0, 800, 480);
+    container_frame.setVisible(false);
     frame_down.setPosition(0, 190, 800, 290);
     frame_down.setColor(touchgfx::Color::getColorFromRGB(0, 0, 50));
     container_frame.add(frame_down);
@@ -26,6 +29,7 @@ screenViewBase::screenViewBase()
     add(container_frame);
 
     container_descr.setPosition(0, 0, 800, 190);
+    container_descr.setVisible(false);
     desr_line1.setPosition(174, 56, 250, 4);
     desr_line1Painter.setColor(touchgfx::Color::getColorFromRGB(70, 255, 255));
     desr_line1.setPainter(desr_line1Painter);
@@ -41,6 +45,7 @@ screenViewBase::screenViewBase()
     desr_rfl_unit.setText(TypedText(T___SINGLEUSE_T38D));
     desr_rfl_unit.setTextPosition(0, 12, 65, 50);
     desr_rfl_unit.setTextColors(touchgfx::Color::getColorFromRGB(10, 10, 10), touchgfx::Color::getColorFromRGB(10, 10, 10));
+    desr_rfl_unit.setAction(flexButtonCallback);
     desr_rfl_unit.setPosition(562, 132, 65, 50);
     container_descr.add(desr_rfl_unit);
 
@@ -531,6 +536,7 @@ screenViewBase::screenViewBase()
     add(container_table);
 
     container_comm.setPosition(175, 240, 615, 230);
+    container_comm.setVisible(false);
     table_cell_0_0_1.setBoxWithBorderPosition(0, 0, 302, 45);
     table_cell_0_0_1.setBorderSize(0);
     table_cell_0_0_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
@@ -634,6 +640,7 @@ screenViewBase::screenViewBase()
     add(container_comm);
 
     container_menu.setPosition(10, 240, 150, 229);
+    container_menu.setVisible(false);
     menu_table_sel.setBoxWithBorderPosition(0, 0, 150, 50);
     menu_table_sel.setBorderSize(2);
     menu_table_sel.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 50, 30), touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -679,6 +686,7 @@ screenViewBase::screenViewBase()
     add(container_menu);
 
     container_state.setPosition(174, 199, 626, 34);
+    container_state.setVisible(false);
     state_alc_brief.setBoxWithBorderPosition(0, 0, 50, 34);
     state_alc_brief.setBorderSize(2);
     state_alc_brief.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(255, 255, 255), touchgfx::Color::getColorFromRGB(51, 102, 153));
@@ -752,6 +760,10 @@ screenViewBase::screenViewBase()
     container_state.add(state_table_0_dir);
 
     add(container_state);
+
+    image1.setXY(1, 0);
+    image1.setBitmap(touchgfx::Bitmap(BITMAP_TESTTT_ID));
+    add(image1);
 }
 
 screenViewBase::~screenViewBase()
@@ -762,6 +774,17 @@ screenViewBase::~screenViewBase()
 void screenViewBase::setupScreen()
 {
 
+}
+
+void screenViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src)
+{
+    if (&src == &desr_rfl_unit)
+    {
+        //Interaction2
+        //When desr_rfl_unit clicked call virtual function
+        //Call function1
+        function1();
+    }
 }
 
 void screenViewBase::handleTickEvent()

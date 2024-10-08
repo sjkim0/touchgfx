@@ -20,6 +20,7 @@
 #include "ltdc.h"
 #include "crc.h"
 #include "spi.h"
+#include "libjpeg.h"
 
 
 void hwInit(void);

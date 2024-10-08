@@ -1,9 +1,9 @@
 #ifndef SCREENVIEW_HPP
 #define SCREENVIEW_HPP
 
+#include <ap_viewmodel.hpp>
 #include <gui_generated/screen_screen/screenViewBase.hpp>
 #include <gui/screen_screen/screenPresenter.hpp>
-#include "ap_touchgfx.hpp"
 
 class screenView : public screenViewBase
 {
@@ -15,10 +15,18 @@ public:
     virtual void gfxTickCallback();
 protected:
 private:
-    ApTouchGfx ap_touchgfx_inst;
+    bool image_shown;
+    ApViewModel ap_vm;
 
     virtual void containerTest(void);
     virtual void wildcardTest(void);
+    virtual void imageTest(void);
 };
+
+class TouchControllerMy : public TouchController
+{
+
+};
+
 
 #endif // SCREENVIEW_HPP

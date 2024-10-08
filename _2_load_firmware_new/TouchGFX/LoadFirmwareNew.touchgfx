@@ -10,6 +10,7 @@
             "Name": "container_frame",
             "Width": 800,
             "Height": 480,
+            "Visible": false,
             "LockPosition": true,
             "Components": [
               {
@@ -39,6 +40,7 @@
             "Name": "container_descr",
             "Width": 800,
             "Height": 190,
+            "Visible": false,
             "LockPosition": true,
             "Components": [
               {
@@ -2574,6 +2576,7 @@
             "Y": 240,
             "Width": 615,
             "Height": 230,
+            "Visible": false,
             "LockPosition": true,
             "Components": [
               {
@@ -3143,6 +3146,7 @@
             "Y": 240,
             "Width": 150,
             "Height": 229,
+            "Visible": false,
             "LockPosition": true,
             "Components": [
               {
@@ -3388,6 +3392,7 @@
             "Y": 199,
             "Width": 626,
             "Height": 34,
+            "Visible": false,
             "LockPosition": true,
             "Components": [
               {
@@ -3822,6 +3827,14 @@
                 ]
               }
             ]
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": 1,
+            "Width": 799,
+            "Height": 479,
+            "RelativeFilename": "testtt.png"
           }
         ],
         "Interactions": [
@@ -3834,6 +3847,17 @@
             "Action": {
               "Type": "ActionCustom",
               "FunctionName": "gfxTickCallback"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "desr_rfl_unit"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "function1"
             }
           }
         ]
@@ -7665,7 +7689,10 @@
     "ProjectFile": "../LoadFirmwareNew.ioc",
     "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
     "OptionalComponents": [],
-    "AdditionalFeatures": []
+    "AdditionalFeatures": [
+      "CWRVector",
+      "Video"
+    ]
   },
   "Version": "4.24.1"
 }

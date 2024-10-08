@@ -23,4 +23,5 @@ void hwInit(void)
     MX_TIM16_Init();
     MX_CRC_Init();
     MX_SPI4_Init();
+    MX_LIBJPEG_Init();
 }

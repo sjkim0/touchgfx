@@ -13,6 +13,7 @@
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/containers/buttons/Buttons.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/Image.hpp>
 
 class screenViewBase : public touchgfx::View<screenPresenter>
 {
@@ -26,6 +27,10 @@ public:
      * Virtual Action Handlers
      */
     virtual void gfxTickCallback()
+    {
+        // Override and implement this function in screen
+    }
+    virtual void function1()
     {
         // Override and implement this function in screen
     }
@@ -124,6 +129,7 @@ protected:
     touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  state_table_2_dir;
     touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  state_table_1_dir;
     touchgfx::TextButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  state_table_0_dir;
+    touchgfx::Image image1;
 
     /*
      * Wildcard Buffers
@@ -210,6 +216,16 @@ private:
      */
     static const uint32_t CANVAS_BUFFER_SIZE = 12000;
     uint8_t canvasBuffer[CANVAS_BUFFER_SIZE];
+
+    /*
+     * Callback Declarations
+     */
+    touchgfx::Callback<screenViewBase, const touchgfx::AbstractButtonContainer&> flexButtonCallback;
+
+    /*
+     * Callback Handler Declarations
+     */
+    void flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src);
 
 };
 

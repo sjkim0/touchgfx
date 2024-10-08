@@ -3,7 +3,8 @@
 
 screenView::screenView()
 {
-    ap_touchgfx_inst.init();
+    ap_vm.init();
+    this->image_shown = false;
 }
 
 void screenView::setupScreen()
@@ -18,12 +19,18 @@ void screenView::tearDownScreen()
 
 void screenView::gfxTickCallback()
 {
+    ap_vm.loop();
     containerTest();
     wildcardTest();
+    imageTest();
 }
 
 void screenView::containerTest(void)
 {
+    if(this->image_shown == false)
+    {
+        return;
+    }
     static int visible_count = 0;
     const int visible_count_max = 50;
     static int table_visible_state = 0;
@@ -72,19 +79,47 @@ void screenView::containerTest(void)
     }
 }
 
+void screenView::imageTest(void)
+{
+    static int count = 0;
+    const int count_max = 100;
+
+    if(count < count_max)
+    {
+        count += 1;
+    }
+    else if(this->image_shown == false)
+    {
+        this->image_shown = true;
+        image1.setVisible(false);
+        image1.invalidate();
+
+        container_menu.setVisible(true);
+        container_descr.setVisible(true);
+        container_state.setVisible(true);
+        container_table.setVisible(true);
+        container_menu.invalidate();
+        container_descr.invalidate();
+        container_state.invalidate();
+        container_table.invalidate();
+    }
+}
+
 void screenView::wildcardTest(void)
 {
     /*
      *@brief: wild card test
      */
-
+    if(this->image_shown == false)
+    {
+        return;
+    }
     static int a = 0;
     static int count = 0;
     const int max_count = 1;
     static int catched = 0;
     if(count > max_count)
     {
-        ap_touchgfx_inst.loop();
         count %= max_count;
         if(a == 0)
         {
@@ -181,3 +216,4 @@ void screenView::wildcardTest(void)
     }
     count += 1;
 }
+

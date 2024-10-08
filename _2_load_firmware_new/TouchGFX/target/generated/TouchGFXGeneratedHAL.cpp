@@ -21,6 +21,36 @@
 #include <gui/common/FrontendHeap.hpp>
 #include <touchgfx/hal/GPIO.hpp>
 
+#include <touchgfx/widgets/canvas/CWRVectorRenderer.hpp>
+
+#include <DirectFrameBufferVideoController.hpp>
+
+#include <SoftwareMJPEGDecoder.hpp>
+uint32_t lineBuffer[800];
+
+SoftwareMJPEGDecoder mjpegdecoder1((uint8_t*)lineBuffer);
+
+namespace
+{
+DirectFrameBufferVideoController<1, Bitmap::RGB565> videoController;
+}
+
+//Singleton Factory
+VideoController& VideoController::getInstance()
+{
+    return videoController;
+}
+
+namespace touchgfx
+{
+VectorRenderer* VectorRenderer::getInstance()
+{
+    static CWRVectorRendererRGB565 renderer;
+
+    return &renderer;
+}
+} // namespace touchgfx
+
 #include "stm32h7xx.h"
 #include "stm32h7xx_hal_ltdc.h"
 
@@ -39,6 +69,12 @@ void TouchGFXGeneratedHAL::initialize()
     enableLCDControllerInterrupt();
     enableInterrupts();
     setFrameBufferStartAddresses((void*)0xC0000000, (void*)0xC0100000, (void*)0);
+
+    /*
+     * Add software decoder to video controller
+     */
+    videoController.addDecoder(mjpegdecoder1, 0);
+
 }
 
 void TouchGFXGeneratedHAL::configureInterrupts()

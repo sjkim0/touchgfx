@@ -21,6 +21,7 @@
 #include "crc.h"
 #include "dma.h"
 #include "dma2d.h"
+#include "libjpeg.h"
 #include "ltdc.h"
 #include "memorymap.h"
 #include "spi.h"
@@ -117,6 +118,7 @@ int main(void)
   MX_CRC_Init();
   MX_LTDC_Init();
   MX_SPI4_Init();
+  MX_LIBJPEG_Init();
   MX_TouchGFX_Init();
   /* USER CODE BEGIN 2 */
 
